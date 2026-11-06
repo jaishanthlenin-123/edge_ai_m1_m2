@@ -1,0 +1,90 @@
+[
+  {
+    "scenario_id": "scenario_1_front_view",
+    "name": "Front View",
+    "status": "PASS (Detected)",
+    "passed": true,
+    "confidence": 0.4011,
+    "detections_count": 1,
+    "latency_ms": 5123.3,
+    "raw_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/raw_scenario_1_front_view.jpg",
+    "annotated_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/annotated_scenario_1_front_view.jpg"
+  },
+  {
+    "scenario_id": "scenario_2_side_view",
+    "name": "Side View",
+    "status": "FAIL (Not Detected)",
+    "passed": false,
+    "confidence": 0.0,
+    "detections_count": 0,
+    "latency_ms": 408.9,
+    "raw_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/raw_scenario_2_side_view.jpg",
+    "annotated_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/annotated_scenario_2_side_view.jpg"
+  },
+  {
+    "scenario_id": "scenario_3_angled_view",
+    "name": "Angled View",
+    "status": "FAIL (Not Detected)",
+    "passed": false,
+    "confidence": 0.0,
+    "detections_count": 0,
+    "latency_ms": 314.4,
+    "raw_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/raw_scenario_3_angled_view.jpg",
+    "annotated_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/annotated_scenario_3_angled_view.jpg"
+  },
+  {
+    "scenario_id": "scenario_4_near_distance",
+    "name": "Near Distance",
+    "status": "FAIL (Not Detected)",
+    "passed": false,
+    "confidence": 0.0,
+    "detections_count": 0,
+    "latency_ms": 329.1,
+    "raw_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/raw_scenario_4_near_distance.jpg",
+    "annotated_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/annotated_scenario_4_near_distance.jpg"
+  },
+  {
+    "scenario_id": "scenario_5_far_distance",
+    "name": "Farther Distance",
+    "status": "PASS (Detected)",
+    "passed": true,
+    "confidence": 0.6754,
+    "detections_count": 2,
+    "latency_ms": 320.8,
+    "raw_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/raw_scenario_5_far_distance.jpg",
+    "annotated_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/annotated_scenario_5_far_distance.jpg"
+  },
+  {
+    "scenario_id": "scenario_6_bright_light",
+    "name": "Bright Lighting",
+    "status": "FAIL (Not Detected)",
+    "passed": false,
+    "confidence": 0.0,
+    "detections_count": 0,
+    "latency_ms": 538.8,
+    "raw_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/raw_scenario_6_bright_light.jpg",
+    "annotated_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/annotated_scenario_6_bright_light.jpg"
+  },
+  {
+    "scenario_id": "scenario_7_low_light",
+    "name": "Lower Lighting",
+    "status": "FAIL (Not Detected)",
+    "passed": false,
+    "confidence": 0.0,
+    "detections_count": 0,
+    "latency_ms": 955.6,
+    "raw_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/raw_scenario_7_low_light.jpg",
+    "annotated_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/annotated_scenario_7_low_light.jpg"
+  },
+  {
+    "scenario_id": "scenario_8_complex_bg",
+    "name": "Complex Background",
+    "status": "FAIL (Not Detected)",
+    "passed": false,
+    "confidence": 0.0,
+    "detections_count": 0,
+    "latency_ms": 837.2,
+    "raw_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/raw_scenario_8_complex_bg.jpg",
+    "annotated_image": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/detection_tests/annotated_scenario_8_complex_bg.jpg"
+  }
+]

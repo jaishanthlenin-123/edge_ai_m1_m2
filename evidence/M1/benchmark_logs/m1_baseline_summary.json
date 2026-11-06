@@ -1,0 +1,52 @@
+{
+  "benchmark_timestamp": "2026-11-06T15:37:08.515503",
+  "model_name": "YOLO26 Nano (Roboflow Version 3)",
+  "model_weights": "/home/forge/Downloads/edge12/edge_ai_camera_enclosure/models/best.pt",
+  "model_size_bytes": 5419973,
+  "input_resolution": "640x640",
+  "confidence_threshold": 0.35,
+  "iou_threshold": 0.7,
+  "runtime_backend": "PyTorch ARM64 CPU (FP32)",
+  "total_frames_processed": 262,
+  "total_duration_seconds": 300.26,
+  "inference_latency": {
+    "average_ms": 846.07,
+    "median_ms": 307.07,
+    "min_ms": 271.15,
+    "max_ms": 47911.29,
+    "p95_ms": 910.75
+  },
+  "fps_metrics": {
+    "pure_inference_fps": 1.18,
+    "complete_pipeline_fps": 0.87
+  },
+  "cpu_utilization": {
+    "average_percent": 55.73,
+    "peak_percent": 76.7,
+    "per_core_average_percent": [
+      59.53,
+      57.2,
+      52.89,
+      52.91
+    ]
+  },
+  "ram_utilization": {
+    "available_before_mb": 581.45,
+    "process_used_mb": 240.09,
+    "process_peak_mb": 400.62,
+    "available_after_mb": 284.11
+  },
+  "temperature_celsius": {
+    "start": 49.05,
+    "min": 47.95,
+    "peak": 60.05,
+    "end": 59.5,
+    "delta": 12.1
+  },
+  "thermal_throttling": {
+    "occurred": false,
+    "throttling_events_count": 0,
+    "final_throttled_hex": "0x0",
+    "final_throttled_flags": "None (Optimal Operating Condition)"
+  }
+}

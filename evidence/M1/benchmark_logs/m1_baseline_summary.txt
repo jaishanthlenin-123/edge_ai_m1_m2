@@ -1,0 +1,39 @@
+=================================================================
+  M1 BASELINE PERFORMANCE BENCHMARK - RASPBERRY PI 5
+=================================================================
+
+Model:                YOLO26 Nano (Roboflow Version 3)
+Weights File:         /home/forge/Downloads/edge12/edge_ai_camera_enclosure/models/best.pt (5419973 bytes)
+Runtime Backend:      PyTorch ARM64 CPU (FP32)
+Input Resolution:     640x640
+Frames Evaluated:     262 frames
+Test Duration:        300.26 seconds
+
+--- Inference Latency (Model-Only) ---
+Average Latency:      846.07 ms
+Median Latency:       307.07 ms
+Minimum Latency:      271.15 ms
+Maximum Latency:      47911.29 ms
+95th Percentile:      910.75 ms
+
+--- Frame Rate (FPS) ---
+Model Inference FPS:  1.18 FPS
+Complete Pipeline:    0.87 FPS
+
+--- CPU Utilization ---
+Average CPU Load:     55.73%
+Peak CPU Load:        76.7%
+Per-Core Loads:       [59.53, 57.2, 52.89, 52.91]%
+
+--- RAM Utilization ---
+Available Before:     581.45 MB
+Process Memory:       240.09 MB
+Process Peak:         400.62 MB
+Available After:      284.11 MB
+
+--- Thermal & Throttling ---
+Start Temp:           49.05°C
+Peak Temp:            60.05°C
+Temp Delta:           +12.1°C
+Thermal Throttling:   NO (None (Optimal Operating Condition))
+=================================================================

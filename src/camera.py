@@ -83,6 +83,14 @@ class CameraCapture:
         else:
             print(f"[ERROR] Could not open video source: {cam_idx}")
 
+    def is_opened(self):
+        """Returns True if the camera source is actively initialized and opened."""
+        if self.is_picam and self.picam2 is not None:
+            return True
+        elif self.cap is not None and self.cap.isOpened():
+            return True
+        return False
+
     def read(self):
         """
         Reads a frame from the camera.

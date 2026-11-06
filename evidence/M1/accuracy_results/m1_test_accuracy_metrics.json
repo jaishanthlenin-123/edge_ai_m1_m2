@@ -1,0 +1,41 @@
+{
+  "evaluation_name": "Roboflow Model Version 3 - Held-Out Benchmark",
+  "model_architecture": "YOLO26 Nano (yolo26n)",
+  "project": "m1_m2",
+  "version": 3,
+  "target_class": "RASPBERY PI CAM ENCLOSURE",
+  "input_resolution": "640x640",
+  "dataset_splits": {
+    "training_split_percent": 71,
+    "validation_split_percent": 19,
+    "test_split_percent": 10,
+    "total_source_images": 159,
+    "positive_source_images": 139,
+    "negative_background_images": 20,
+    "augmented_total_images": 274
+  },
+  "validation_metrics": {
+    "precision_percent": 100.0,
+    "recall_percent": 96.3,
+    "mAP50_percent": 99.28,
+    "mAP50_95_percent": 93.79,
+    "f1_score": 0.981
+  },
+  "held_out_test_metrics": {
+    "precision_percent": 100.0,
+    "recall_percent": 91.7,
+    "mAP50_percent": 99.31,
+    "mAP50_95_percent": 93.13
+  },
+  "false_positive_analysis": {
+    "false_positive_rate_on_negatives_percent": 0.0,
+    "background_rejection_percent": 100.0,
+    "wall_curtain_activation": "Completely Eliminated (0% activation in v3 vs 73.2% in v1/v2)"
+  },
+  "scenario_benchmark_summary": {
+    "total_scenarios_tested": 15,
+    "positive_scenarios": 9,
+    "negative_scenarios": 6,
+    "v3_pass_rate_percent": 100.0
+  }
+}
