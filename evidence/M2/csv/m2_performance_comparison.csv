@@ -1,0 +1,13 @@
+Metric,PyTorch Baseline (CPU),ONNX Runtime (CPU),Delta / Improvement,Unit
+Inference FPS,3.32,6.0,+80.7%,FPS
+Pipeline FPS,3.15,3.33,+5.7%,FPS
+Avg Latency,301.13,166.6,-134.5 ms,ms
+Median Latency,243.73,170.59,-30.0%,ms
+Min Latency,163.17,129.92,-33.2 ms,ms
+Max Latency,2335.72,337.5,-1998.2 ms,ms
+P95 Latency,661.77,202.06,-459.7 ms,ms
+Average CPU,80.33,66.16,-14.2%,%
+Peak CPU,97.1,100.0,2.9%,%
+Peak RAM RSS,615.02,602.41,-2.1%,MB
+Temp Delta,+12.1°C,+9.35°C,-2.8°C,°C
+Thermal Throttling,0x0,0x0,None (0x0),hex

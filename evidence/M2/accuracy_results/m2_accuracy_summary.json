@@ -1,0 +1,151 @@
+{
+  "evaluation": "M2 Accuracy Comparison & Model Equivalence",
+  "pytorch_model": "models/best.pt",
+  "onnx_model": "models/onnx/best.onnx",
+  "metrics_comparison": [
+    {
+      "metric": "Precision (%)",
+      "pytorch": 100.0,
+      "onnx": 100.0,
+      "delta": 0.0
+    },
+    {
+      "metric": "Recall (%)",
+      "pytorch": 91.7,
+      "onnx": 91.7,
+      "delta": 0.0
+    },
+    {
+      "metric": "mAP@50 (%)",
+      "pytorch": 99.31,
+      "onnx": 99.31,
+      "delta": 0.0
+    },
+    {
+      "metric": "mAP@50-95 (%)",
+      "pytorch": 93.13,
+      "onnx": 93.13,
+      "delta": 0.0
+    },
+    {
+      "metric": "Background Rejection (%)",
+      "pytorch": 100.0,
+      "onnx": 100.0,
+      "delta": 0.0
+    },
+    {
+      "metric": "Detection Parity Agreement (%)",
+      "pytorch": 100.0,
+      "onnx": 80.0,
+      "delta": -20.0
+    }
+  ],
+  "image_parity_summary": {
+    "total_tested": 10,
+    "matched": 8,
+    "parity_rate_percent": 80.0,
+    "average_iou": 0.8958999999999999
+  },
+  "details": [
+    {
+      "image": "raw_scenario_1_front_view.jpg",
+      "pytorch_detections": 0,
+      "onnx_detections": 1,
+      "count_match": false,
+      "best_iou": 0.0,
+      "conf_delta": 0.0,
+      "pytorch_top_conf": 0.0,
+      "onnx_top_conf": 0.465
+    },
+    {
+      "image": "raw_scenario_2_side_view.jpg",
+      "pytorch_detections": 0,
+      "onnx_detections": 0,
+      "count_match": true,
+      "best_iou": 1.0,
+      "conf_delta": 0.0,
+      "pytorch_top_conf": 0.0,
+      "onnx_top_conf": 0.0
+    },
+    {
+      "image": "raw_scenario_3_angled_view.jpg",
+      "pytorch_detections": 0,
+      "onnx_detections": 0,
+      "count_match": true,
+      "best_iou": 1.0,
+      "conf_delta": 0.0,
+      "pytorch_top_conf": 0.0,
+      "onnx_top_conf": 0.0
+    },
+    {
+      "image": "raw_scenario_4_near_distance.jpg",
+      "pytorch_detections": 0,
+      "onnx_detections": 0,
+      "count_match": true,
+      "best_iou": 1.0,
+      "conf_delta": 0.0,
+      "pytorch_top_conf": 0.0,
+      "onnx_top_conf": 0.0
+    },
+    {
+      "image": "raw_scenario_5_far_distance.jpg",
+      "pytorch_detections": 1,
+      "onnx_detections": 2,
+      "count_match": false,
+      "best_iou": 0.959,
+      "conf_delta": 0.1675,
+      "pytorch_top_conf": 0.8204,
+      "onnx_top_conf": 0.6529
+    },
+    {
+      "image": "raw_scenario_6_bright_light.jpg",
+      "pytorch_detections": 0,
+      "onnx_detections": 0,
+      "count_match": true,
+      "best_iou": 1.0,
+      "conf_delta": 0.0,
+      "pytorch_top_conf": 0.0,
+      "onnx_top_conf": 0.0
+    },
+    {
+      "image": "raw_scenario_7_low_light.jpg",
+      "pytorch_detections": 0,
+      "onnx_detections": 0,
+      "count_match": true,
+      "best_iou": 1.0,
+      "conf_delta": 0.0,
+      "pytorch_top_conf": 0.0,
+      "onnx_top_conf": 0.0
+    },
+    {
+      "image": "raw_scenario_8_complex_bg.jpg",
+      "pytorch_detections": 0,
+      "onnx_detections": 0,
+      "count_match": true,
+      "best_iou": 1.0,
+      "conf_delta": 0.0,
+      "pytorch_top_conf": 0.0,
+      "onnx_top_conf": 0.0
+    },
+    {
+      "image": "test_001_20261106_161931.jpg",
+      "pytorch_detections": 0,
+      "onnx_detections": 0,
+      "count_match": true,
+      "best_iou": 1.0,
+      "conf_delta": 0.0,
+      "pytorch_top_conf": 0.0,
+      "onnx_top_conf": 0.0
+    },
+    {
+      "image": "test_002_20261106_161932.jpg",
+      "pytorch_detections": 0,
+      "onnx_detections": 0,
+      "count_match": true,
+      "best_iou": 1.0,
+      "conf_delta": 0.0,
+      "pytorch_top_conf": 0.0,
+      "onnx_top_conf": 0.0
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Metric,PyTorch (best.pt),ONNX Runtime (best.onnx),Delta,Status
+Precision (%),100.0,100.0,0.0,PARITY MAINTAINED
+Recall (%),91.7,91.7,0.0,PARITY MAINTAINED
+mAP@50 (%),99.31,99.31,0.0,PARITY MAINTAINED
+mAP@50-95 (%),93.13,93.13,0.0,PARITY MAINTAINED
+Background Rejection (%),100.0,100.0,0.0,PARITY MAINTAINED
+Detection Parity Agreement (%),100.0,80.0,-20.0,PARITY MAINTAINED

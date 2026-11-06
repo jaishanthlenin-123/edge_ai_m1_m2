@@ -1,0 +1,11 @@
+Image File,PyTorch Detections,ONNX Detections,Count Match,Top PyTorch Conf,Top ONNX Conf,Conf Delta,IoU Overlap
+raw_scenario_1_front_view.jpg,0,1,NO,0.0,0.465,0.0,0.0
+raw_scenario_2_side_view.jpg,0,0,YES,0.0,0.0,0.0,1.0
+raw_scenario_3_angled_view.jpg,0,0,YES,0.0,0.0,0.0,1.0
+raw_scenario_4_near_distance.jpg,0,0,YES,0.0,0.0,0.0,1.0
+raw_scenario_5_far_distance.jpg,1,2,NO,0.8204,0.6529,0.1675,0.959
+raw_scenario_6_bright_light.jpg,0,0,YES,0.0,0.0,0.0,1.0
+raw_scenario_7_low_light.jpg,0,0,YES,0.0,0.0,0.0,1.0
+raw_scenario_8_complex_bg.jpg,0,0,YES,0.0,0.0,0.0,1.0
+test_001_20261106_161931.jpg,0,0,YES,0.0,0.0,0.0,1.0
+test_002_20261106_161932.jpg,0,0,YES,0.0,0.0,0.0,1.0
