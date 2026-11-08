@@ -126,14 +126,13 @@ edge_ai_m1_m2/
     │   │   ├── README.md                  # Training & detection summary
     │   │   ├── M1_Training_and_Detection_Report.md # Full training & detection report
     │   │   └── visual_evidence/           # Confusion matrix, PR curve & live test frames
-    │   └── 07_cad_design/                 # IDRP Hardware CAD Evidence & 3D Drawings
+    │   └── 07_cad_design/                 # IDRP Hardware CAD Evidence & Design Views
     │       ├── README.md                  # CAD evidence navigation & summary
     │       ├── ENCLOSURE_JAISHANTH.f3d    # Preserved original CAD file (875 KB)
-    │       ├── cad_multi_view_drawing.png # 4-view engineering drawing sheet
     │       ├── cad_isometric_view.png     # Genuine 3D exploded isometric render
-    │       ├── cad_front_view.png         # Front elevation view (X-Y projection)
-    │       ├── cad_side_view.png          # Right side elevation view (Z-Y projection)
-    │       ├── cad_top_view.png           # Top plan view (X-Z projection)
+    │       ├── cad_front_view.png         # Autodesk Fusion 360 front elevation (lens aperture & standoffs)
+    │       ├── cad_perspective_view.png   # Autodesk Fusion 360 perspective view (internal cavity & port)
+    │       ├── cad_side_view.png          # Autodesk Fusion 360 side elevation (ribbon cable egress notch)
     │       ├── M1_CAD_Design_Report.md    # Comprehensive CAD engineering report
     │       ├── CAD_Design_Specification.md# Engineering specifications & tolerances
     │       ├── CAD_File_Information.md    # File forensics, checksums & viewer guide
@@ -159,9 +158,19 @@ edge_ai_m1_m2/
 
 The custom Raspberry Pi Camera Enclosure was modeled by **Jaishanth** as an **Individual Design and Research Project (IDRP)** to provide rigid optical alignment, impact protection, and strain-relieved ribbon cable routing for edge computer vision.
 
-![CAD Multi-View Drawing](evidence/M1/07_cad_design/cad_multi_view_drawing.png)
+### 5.1 Primary CAD Model Previews
 
-### 5.1 CAD Model Verification & Integrity
+| 3D Isometric Exploded View (Native CAD Render) | Autodesk Fusion 360 Front Elevation (Lens Port) |
+| :---: | :---: |
+| ![3D Isometric View](evidence/M1/07_cad_design/cad_isometric_view.png) | ![CAD Front Elevation](evidence/M1/07_cad_design/cad_front_view.png) |
+| *Figure 5.1: 3D exploded isometric assembly render extracted from `ENCLOSURE_JAISHANTH.f3d`, showing top shell, camera mounting bosses, and base.* | *Figure 5.2: Autodesk Fusion 360 front elevation view showing Ø 16 mm circular lens aperture, optical axis alignment, and M2 standoff positions.* |
+
+| Autodesk Fusion 360 Perspective (Internal Chamber) | Autodesk Fusion 360 Side Profile (Cable Notch) |
+| :---: | :---: |
+| ![CAD Perspective View](evidence/M1/07_cad_design/cad_perspective_view.png) | ![CAD Side Profile](evidence/M1/07_cad_design/cad_side_view.png) |
+| *Figure 5.3: Autodesk Fusion 360 perspective view showing camera PCB chamber, interior beveling, and ribbon cable routing channel.* | *Figure 5.4: Autodesk Fusion 360 lateral elevation showing chassis profile thickness and strain-relieved FFC ribbon cable egress slot.* |
+
+### 5.2 CAD Model Verification & Integrity
 - **Original CAD File:** [`evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d`](evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d)
 - **Direct GitHub File Link:** [`ENCLOSURE_JAISHANTH.f3d`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d)
 - **CAD Evidence Folder:** [`evidence/M1/07_cad_design/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/07_cad_design/)

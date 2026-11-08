@@ -75,7 +75,15 @@ The camera enclosure was engineered to fulfill several functional and operationa
 
 The CAD model features a two-piece split-body assembly designed for modular manufacturing and maintenance:
 
-![Multi-View CAD Specification Drawing](./cad_multi_view_drawing.png)
+| 3D Isometric Exploded View (Native CAD Render) | Autodesk Fusion 360 Front Elevation (Lens Port) |
+| :---: | :---: |
+| ![3D Isometric View](./cad_isometric_view.png) | ![CAD Front View](./cad_front_view.png) |
+| *Native 3D exploded assembly render extracted from `ENCLOSURE_JAISHANTH.f3d`* | *Autodesk Fusion 360 front elevation view showing Ø 16 mm circular lens aperture* |
+
+| Autodesk Fusion 360 Perspective (Internal Chamber) | Autodesk Fusion 360 Side Profile (Cable Notch) |
+| :---: | :---: |
+| ![CAD Perspective View](./cad_perspective_view.png) | ![CAD Side Profile](./cad_side_view.png) |
+| *Autodesk Fusion 360 perspective view showing camera PCB chamber and bevel* | *Autodesk Fusion 360 lateral elevation showing ribbon cable exit slot notch* |
 
 ### 4.1 Enclosure Top Lid (Upper Faceplate)
 - **Central Lens Aperture:** A circular viewport measuring **Ø16.0 mm** centered on the optical axis, providing an unobstructed field of view (FOV) for standard 62°–75° Raspberry Pi camera lenses.
@@ -147,11 +155,11 @@ The following views are generated directly from the original CAD file geometry:
 
 ---
 
-### 7.2 Orthographic Projections
-| Top Plan View (X-Z) | Front Elevation View (X-Y) | Side Elevation View (Z-Y) |
+### 7.2 Authentic Autodesk Fusion 360 Design Views
+| Front Elevation View | Perspective / Chamber View | Side Profile Elevation View |
 | :---: | :---: | :---: |
-| ![Top View](./cad_top_view.png) | ![Front View](./cad_front_view.png) | ![Side View](./cad_side_view.png) |
-| *Figure 2: Top Plan View* | *Figure 3: Front Elevation View* | *Figure 4: Right Side Elevation View* |
+| ![Front View](./cad_front_view.png) | ![Perspective View](./cad_perspective_view.png) | ![Side View](./cad_side_view.png) |
+| *Figure 2: Front elevation showing Ø 16 mm circular lens aperture & mounting standoffs* | *Figure 3: Tilted perspective showing internal camera module pocket & cavity beveling* | *Figure 4: Lateral profile elevation showing ribbon cable exit slot notch* |
 
 ---
 

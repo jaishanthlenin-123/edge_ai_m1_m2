@@ -16,20 +16,28 @@ This specification defines the mechanical geometry, mounting interfaces, manufac
 
 ---
 
-## 2. Technical Drawing & Multi-View Projections
+## 2. Technical Drawings & Model Views
 
-![CAD Multi-View Drawing](./cad_multi_view_drawing.png)
+| 3D Isometric Exploded View (Native CAD Render) | Autodesk Fusion 360 Front Elevation (Lens Port) |
+| :---: | :---: |
+| ![3D Isometric View](./cad_isometric_view.png) | ![CAD Front View](./cad_front_view.png) |
+| *Native 3D exploded assembly render extracted from `ENCLOSURE_JAISHANTH.f3d`* | *Autodesk Fusion 360 front elevation view showing Ø 16 mm circular lens aperture* |
+
+| Autodesk Fusion 360 Perspective (Internal Chamber) | Autodesk Fusion 360 Side Profile (Cable Notch) |
+| :---: | :---: |
+| ![CAD Perspective View](./cad_perspective_view.png) | ![CAD Side Profile](./cad_side_view.png) |
+| *Autodesk Fusion 360 perspective view showing camera PCB chamber and bevel* | *Autodesk Fusion 360 lateral elevation showing ribbon cable exit slot notch* |
 
 ```
 ========================================================================================
-                                 PROJECTION MATRIX
+                                 VIEW MATRIX
 ========================================================================================
 View                   Coordinate Planes       Visible Features
 ----------------------------------------------------------------------------------------
 View 1: 3D Isometric   3D Perspective          Exploded assembly, top lid, base, PCB
-View 2: Top Plan       X-Z Projection          Lens aperture, standoff pattern, footprint
-View 3: Front Elev.    X-Y Projection          Standoff rings, optical axis alignment
-View 4: Right Side     Z-Y Projection          FFC ribbon exit slot, joint seam profile
+View 2: Front Elev.    X-Y Projection          Ø 16 mm lens aperture, standoff bosses, optical axis
+View 3: Perspective    3D Perspective          Camera PCB chamber, beveling, cable routing
+View 4: Side Profile   Z-Y Projection          FFC ribbon exit slot, joint seam profile
 ========================================================================================
 ```
 

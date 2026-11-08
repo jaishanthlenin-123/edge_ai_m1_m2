@@ -13,7 +13,17 @@
 
 This directory contains the computer-aided design (CAD) models, engineering drawings, specifications, and verification records for the custom Raspberry Pi Camera Enclosure. This enclosure was modeled in Autodesk Fusion 360 as the physical hardware component for the Edge AI detection pipeline.
 
-![CAD Multi-View Drawing](./cad_multi_view_drawing.png)
+### 1.1 CAD Design Evidence Previews
+
+| 3D Isometric Exploded View (Native CAD Render) | Autodesk Fusion 360 Front Elevation (Lens Port) |
+| :---: | :---: |
+| ![3D Isometric View](./cad_isometric_view.png) | ![CAD Front View](./cad_front_view.png) |
+| *Native 3D exploded assembly render extracted from `ENCLOSURE_JAISHANTH.f3d`* | *Autodesk Fusion 360 front elevation view showing Ø 16 mm circular lens aperture* |
+
+| Autodesk Fusion 360 Perspective (Internal Chamber) | Autodesk Fusion 360 Side Profile (Cable Notch) |
+| :---: | :---: |
+| ![CAD Perspective View](./cad_perspective_view.png) | ![CAD Side Profile](./cad_side_view.png) |
+| *Autodesk Fusion 360 perspective view showing camera PCB chamber and bevel* | *Autodesk Fusion 360 lateral elevation showing ribbon cable exit slot notch* |
 
 ---
 
@@ -34,10 +44,9 @@ This directory contains the computer-aided design (CAD) models, engineering draw
 | View | File Link | Description |
 | :--- | :--- | :--- |
 | **3D Isometric View** | [`cad_isometric_view.png`](./cad_isometric_view.png) | 1024×1024 native Fusion 360 exploded assembly render |
-| **Top Plan View (X-Z)** | [`cad_top_view.png`](./cad_top_view.png) | Top elevation view showing standoffs and aperture |
-| **Front Elevation View (X-Y)** | [`cad_front_view.png`](./cad_front_view.png) | Front elevation showing lens viewport and optical center |
-| **Side Elevation View (Z-Y)** | [`cad_side_view.png`](./cad_side_view.png) | Lateral profile showing ribbon cable egress slot |
-| **4-View Drawing Sheet** | [`cad_multi_view_drawing.png`](./cad_multi_view_drawing.png) | Composite engineering drawing with coordinate axes |
+| **Front Elevation View** | [`cad_front_view.png`](./cad_front_view.png) | Autodesk Fusion 360 front elevation showing Ø 16 mm aperture & standoffs |
+| **Perspective / Chamber View** | [`cad_perspective_view.png`](./cad_perspective_view.png) | Autodesk Fusion 360 perspective showing camera PCB chamber and bevel |
+| **Side Elevation View** | [`cad_side_view.png`](./cad_side_view.png) | Autodesk Fusion 360 lateral elevation showing ribbon cable exit notch |
 
 ---
 
