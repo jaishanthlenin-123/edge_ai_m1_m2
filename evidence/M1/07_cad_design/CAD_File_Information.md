@@ -1,10 +1,10 @@
 # CAD File Information: ENCLOSURE_JAISHANTH.f3d
 
-**Component:** Raspberry Pi Camera Enclosure (IDRP Hardware Component)  
-**Designer:** Jaishanth  
-**Location in Repository:**  
-- Primary Evidence Path: [`evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d`](./ENCLOSURE_JAISHANTH.f3d)  
-- Root Path: [`ENCLOSURE_JAISHANTH.f3d`](../../ENCLOSURE_JAISHANTH.f3d)  
+**Component:** Raspberry Pi Camera Enclosure (IDRP Hardware Component)
+**Designer:** Jaishanth
+**Location in Repository:**
+- Primary Evidence Path: [`evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d`](./ENCLOSURE_JAISHANTH.f3d)
+- Root Path: [`ENCLOSURE_JAISHANTH.f3d`](../../ENCLOSURE_JAISHANTH.f3d)
 
 ---
 

@@ -1,11 +1,11 @@
 # CAD Design Evidence: Raspberry Pi Camera Enclosure
 
-**Assessment Item:** 07_cad_design  
-**Hardware Component:** Individual Design and Research Project (IDRP)  
-**Designer:** Jaishanth  
-**Native Model File:** [`ENCLOSURE_JAISHANTH.f3d`](./ENCLOSURE_JAISHANTH.f3d)  
-**Direct GitHub CAD File Link:** [`ENCLOSURE_JAISHANTH.f3d`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d)  
-**Status:** Verified, Accessible & Preserved  
+**Assessment Item:** 07_cad_design
+**Hardware Component:** Individual Design and Research Project (IDRP)
+**Designer:** Jaishanth
+**Native Model File:** [`ENCLOSURE_JAISHANTH.f3d`](./ENCLOSURE_JAISHANTH.f3d)
+**Direct GitHub CAD File Link:** [`ENCLOSURE_JAISHANTH.f3d`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d)
+**Status:** Verified, Accessible & Preserved
 
 ---
 

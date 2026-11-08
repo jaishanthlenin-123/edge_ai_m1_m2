@@ -1,11 +1,11 @@
 # Milestone 1 (M1) Baseline Performance Evaluation Report
 
-**Project:** Raspberry Pi Camera Enclosure Detection – Edge AI & Embedded Vision  
-**Model Architecture:** YOLO26 Nano (`yolo26n`)  
-**Model Version:** Roboflow Cloud Model Version 3 (`best.pt`)  
-**Target Hardware:** Raspberry Pi 5 Model B Rev 1.1 (Broadcom BCM2712 Cortex-A76 @ 2.4 GHz)  
-**Evaluation Date:** November 6, 2026  
-**Status:** Completed Baseline (M1) — Original Model Weights Preserved Intact  
+**Project:** Raspberry Pi Camera Enclosure Detection – Edge AI & Embedded Vision
+**Model Architecture:** YOLO26 Nano (`yolo26n`)
+**Model Version:** Roboflow Cloud Model Version 3 (`best.pt`)
+**Target Hardware:** Raspberry Pi 5 Model B Rev 1.1 (Broadcom BCM2712 Cortex-A76 @ 2.4 GHz)
+**Evaluation Date:** November 6, 2026
+**Status:** Completed Baseline (M1) — Original Model Weights Preserved Intact
 
 ---
 
@@ -88,7 +88,7 @@ The inference pipeline preserves clear separation between camera capture, model 
 2. **Sustained Test Duration:** Continuous 5-minute (**300.26 seconds**) real-time evaluation with uninterrupted live camera streaming from `/dev/video0`.
 3. **Isolated Latency Accounting:** Captured isolated model inference latency separate from camera acquisition (`capture_ms`), pre-processing (`preprocess_ms`), post-processing (`postprocess_ms`), and visual HUD drawing (`render_ms`).
 4. **Hardware Telemetry Sampling:** Captured per-frame instantaneous CPU load, individual 4-core utilization percentages, process RSS RAM, available system memory, SoC thermal readings, and hardware throttling flags.
-5. **No Synthetic Data:** Every measurement reflects physical device execution logged frame-by-frame into [`evidence/M1/csv/baseline_m1_measurements.csv`](file:///home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M1/csv/baseline_m1_measurements.csv).
+5. **No Synthetic Data:** Every measurement reflects physical device execution logged frame-by-frame into [`evidence/M1/csv/baseline_m1_measurements.csv`](./csv/baseline_m1_measurements.csv).
 
 ---
 
@@ -151,7 +151,29 @@ Measured over **262 continuous frames** during the 5-minute sustained test:
 
 ---
 
-## 10. Detection Accuracy Testing (Roboflow Held-Out Test Set)
+## 10. Empirical Benchmark Visualizations & Performance Profiles
+
+The empirical data recorded during physical testing has been synthesized into genuine scientific benchmark profiles:
+
+### 10.1 Live Latency Telemetry Screenshot
+![Baseline HUD Latency 8880ms](./03_baseline_speed/benchmark_visuals/baseline_inference_latency_8880ms.jpg)
+*Figure 10.1: Live HUD capture (`baseline_inference_latency_8880ms.jpg`) showing baseline single-thread unaccelerated execution peaking at 8,880.5 ms (0.1 FPS) during unquantized PyTorch CPU execution.*
+
+### 10.2 Continuous 262-Frame Latency Breakdown
+![Baseline Latency Profile](./03_baseline_speed/benchmark_visuals/m1_baseline_latency_profile.png)
+*Figure 10.2: Frame-by-frame latency profile plotted directly from [`evidence/M1/csv/baseline_m1_measurements.csv`](./csv/baseline_m1_measurements.csv), illustrating steady-state execution around 307 ms with cold-start peaks.*
+
+### 10.3 Raspberry Pi 5 Thermal & CPU Telemetry
+![System Telemetry Profile](./03_baseline_speed/benchmark_visuals/m1_baseline_system_telemetry.png)
+*Figure 10.3: Telemetry profile demonstrating CPU utilization (yellow, left axis) and SoC temperature (red, right axis) over the sustained 5-minute continuous run.*
+
+### 10.4 Milestone 1 Baseline vs. Milestone 2 Optimization Comparison
+![M1 vs M2 Comparison](./03_baseline_speed/benchmark_visuals/m1_baseline_vs_m2_onnx_speedup.png)
+*Figure 10.4: Comparative bar chart illustrating the dramatic speedup achieved between M1 PyTorch baseline (301.1 ms / 3.32 FPS) and M2 ONNX Runtime optimization (166.6 ms / 6.00 FPS), delivering an +80.7% throughput increase.*
+
+---
+
+## 11. Detection Accuracy Testing (Roboflow Held-Out Test Set)
 
 Evaluated against the official Roboflow Model Version 3 held-out test split (10% test split, 14 images):
 

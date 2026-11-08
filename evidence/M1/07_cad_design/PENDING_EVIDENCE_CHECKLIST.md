@@ -1,9 +1,9 @@
 # Pending Evidence Checklist: Physical 3D-Printed Camera Enclosure
 
-**Component:** Raspberry Pi Camera Enclosure (IDRP Hardware Component)  
-**Designer:** Jaishanth  
-**Related CAD Model:** [`ENCLOSURE_JAISHANTH.f3d`](./ENCLOSURE_JAISHANTH.f3d)  
-**Target Upload Directory:** `evidence/M1/07_cad_design/photos/`  
+**Component:** Raspberry Pi Camera Enclosure (IDRP Hardware Component)
+**Designer:** Jaishanth
+**Related CAD Model:** [`ENCLOSURE_JAISHANTH.f3d`](./ENCLOSURE_JAISHANTH.f3d)
+**Target Upload Directory:** `evidence/M1/07_cad_design/photos/`
 
 ---
 

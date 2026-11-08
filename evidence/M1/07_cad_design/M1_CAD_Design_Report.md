@@ -1,11 +1,11 @@
 # Milestone 1 (M1) CAD Design Report: Raspberry Pi Camera Enclosure
 
-**Project:** Edge AI Raspberry Pi Camera Enclosure Detection  
-**Hardware Component:** Individual Design and Research Project (IDRP) Camera Enclosure  
-**Author / Designer:** Jaishanth  
-**CAD Model File:** [`ENCLOSURE_JAISHANTH.f3d`](./ENCLOSURE_JAISHANTH.f3d)  
-**File Format:** Autodesk Fusion 360 Archive (`.f3d`)  
-**Status:** Verified, Accessible & Preserved  
+**Project:** Edge AI Raspberry Pi Camera Enclosure Detection
+**Hardware Component:** Individual Design and Research Project (IDRP) Camera Enclosure
+**Author / Designer:** Jaishanth
+**CAD Model File:** [`ENCLOSURE_JAISHANTH.f3d`](./ENCLOSURE_JAISHANTH.f3d)
+**File Format:** Autodesk Fusion 360 Archive (`.f3d`)
+**Status:** Verified, Accessible & Preserved
 
 ---
 

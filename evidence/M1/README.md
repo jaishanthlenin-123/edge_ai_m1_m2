@@ -1,22 +1,22 @@
-# Milestone 1 (M1) Central Evidence Index & Navigation
+# Milestone 1 (M1) Central Evidence Index & Navigation Matrix
 
 This directory serves as the primary evaluation portal for **Milestone 1 (M1)** of the Edge AI Raspberry Pi Camera Enclosure Detection project. It aggregates all experimental verification records, baseline benchmarks, dataset audit artifacts, the hardware CAD engineering evidence, and the **Roboflow Dataset Version 3** integration.
 
 ---
 
-## 1. M1 Assessment Navigation Matrix
+## 1. M1 Assessment Navigation & Visual Evidence Matrix
 
-All Milestone 1 assessment requirements are systematically indexed below with direct repository navigation:
+All Milestone 1 assessment requirements are systematically indexed below with direct repository navigation to reports, data logs, and embedded genuine visual evidence:
 
-| # | Assessment Category | Directory / Evidence Path | Description & Deliverables |
-| :-: | :--- | :--- | :--- |
-| **01** | **Camera & Repo Setup** | [`01_camera_and_repo/`](./01_camera_and_repo/) | Repository initialization, hardware config, dual-backend camera driver (`src/camera.py`), connection tests |
-| **02** | **OpenCV Pipeline** | [`02_opencv_pipeline/`](./02_opencv_pipeline/) | End-to-end video acquisition loop, 640×640 letterbox preprocessing, HUD telemetry overlays |
-| **03** | **Baseline Speed Benchmark**| [`03_baseline_speed/`](./03_baseline_speed/) | Baseline latency (8,880.5 ms / 0.11 FPS on unaccelerated CPU), raw timing CSVs, summary logs |
-| **04** | **Dataset Version 1 Audit & Roboflow v3** | [`04_dataset_v1/`](./04_dataset_v1/) | 124-image audit, error log, Roboflow project overview, Version 3 download & visual previews |
-| **05** | **Correct Split Verification**| [`05_correct_split/`](./05_correct_split/) | Split distribution audit: Train (88 imgs / 71%), Valid (24 imgs / 19%), Test (12 imgs / 10%) |
-| **06** | **Train & Run Detector** | [`06_train_and_run_detector/`](./06_train_and_run_detector/) | Initial YOLO26 Nano training, test set accuracy metrics, 23 visual detection test cases, 19 live video frames |
-| **07** | **CAD Design Evidence (IDRP)**| [`07_cad_design/`](./07_cad_design/) | Preserved CAD archive (`ENCLOSURE_JAISHANTH.f3d`), engineering reports, multi-view drawings, 3D print specs |
+| # | Assessment Category | Marks | Dedicated Engineering Report | Visual Evidence Directory | Description & Key Deliverables |
+| :-: | :--- | :-: | :--- | :--- | :--- |
+| **01** | **Camera & Repo Setup** | **2** | [`01_camera_and_repo/README.md`](./01_camera_and_repo/README.md) | [`01_camera_and_repo/camera_visuals/`](./01_camera_and_repo/camera_visuals/) | Initial camera frame capture, device binding (`/dev/video0`), dual camera driver (`src/camera.py`), remote repository link |
+| **02** | **OpenCV Pipeline** | **4** | [`M1_OpenCV_Pipeline_Report.md`](./02_opencv_pipeline/M1_OpenCV_Pipeline_Report.md) | [`02_opencv_pipeline/detection_screenshots/`](./02_opencv_pipeline/detection_screenshots/) | Real-time video loop, 640×640 letterboxing, HUD telemetry overlays, 5 genuine live detection screenshots |
+| **03** | **Baseline Speed Benchmark**| **3** | [`M1_Baseline_Performance_Report.md`](./M1_Baseline_Performance_Report.md) | [`03_baseline_speed/benchmark_visuals/`](./03_baseline_speed/benchmark_visuals/) | Unaccelerated PyTorch CPU latency (301.1 ms avg / 8,880.5 ms cold-start), 262-frame CSV logs, CPU/temp plots |
+| **04** | **Dataset Version 1 Audit & v3** | **4** | [`dataset_audit_report.md`](./dataset_audit_report.md) | [`04_dataset_v1/original_m1_audit_visuals/`](./04_dataset_v1/original_m1_audit_visuals/) & [`roboflow_v3_previews/`](./04_dataset_v1/roboflow_v3_previews/) | 124-image audit, skin contamination proof, error catalog, evolution to Version 3 (24 raw & annotated previews) |
+| **05** | **Correct Split Verification**| **2** | [`M1_Dataset_Split_Report.md`](./05_correct_split/M1_Dataset_Split_Report.md) | [`05_correct_split/split_visuals/`](./05_correct_split/split_visuals/) | Split distribution (Train: 230, Valid: 30, Test: 14), 0 hash collisions, 9 split samples (train/valid/test pairs) |
+| **06** | **Train & Run Detector** | **5** | [`M1_Training_and_Detection_Report.md`](./06_train_and_run_detector/M1_Training_and_Detection_Report.md) | [`06_train_and_run_detector/visual_evidence/`](./06_train_and_run_detector/visual_evidence/) | Converged training curves, held-out test confusion matrix (100% precision, 91.7% recall), live detections, failure cases |
+| **07** | **CAD Design Evidence (IDRP)**| **Extra** | [`M1_CAD_Design_Report.md`](./07_cad_design/M1_CAD_Design_Report.md) | [`07_cad_design/`](./07_cad_design/) | Preserved master CAD archive (`ENCLOSURE_JAISHANTH.f3d`), 5 genuine engineering drawings, 3D printing specs |
 
 ---
 
@@ -27,7 +27,6 @@ The Raspberry Pi Camera Enclosure is the primary hardware component developed as
 ![Multi-View CAD Specification Drawing](./07_cad_design/cad_multi_view_drawing.png)
 
 ### 2.1 CAD Model Verification & Integrity
-
 - **Original CAD File:** [`ENCLOSURE_JAISHANTH.f3d`](./07_cad_design/ENCLOSURE_JAISHANTH.f3d)
 - **Direct GitHub Link (CAD File):** [Download / Inspect `ENCLOSURE_JAISHANTH.f3d`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d)
 - **CAD Evidence Folder:** [`evidence/M1/07_cad_design/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/07_cad_design/)
@@ -38,7 +37,6 @@ The Raspberry Pi Camera Enclosure is the primary hardware component developed as
 - **Integrity Status:** **Verified 100% accessible and non-corrupted.**
 
 ### 2.2 Genuine Previews & Engineering Views
-
 - **3D Isometric View (Fusion 360 Native Render):** [`cad_isometric_view.png`](./07_cad_design/cad_isometric_view.png)
 - **Front Elevation View (X-Y Projection):** [`cad_front_view.png`](./07_cad_design/cad_front_view.png)
 - **Right Side Elevation View (Z-Y Projection):** [`cad_side_view.png`](./07_cad_design/cad_side_view.png)
@@ -59,7 +57,8 @@ The repository incorporates the official **Roboflow Dataset Version 3** download
 - **Visual Dataset Previews (Raw & Annotated):** [`04_dataset_v1/roboflow_v3_previews/`](./04_dataset_v1/roboflow_v3_previews/)
 
 ### Dataset Statistics at a Glance
-- **Total Images:** **274 images** (Train: 230 [83.9%], Valid: 30 [11.0%], Test: 14 [5.1%])
+- **Total Images:** **274 images** (Train: 230 [83.94%], Valid: 30 [10.95%], Test: 14 [5.11%])
+- **Source Photographs:** **159 images** (139 positive enclosure + 20 negative background photos)
 - **Total Annotations:** **239 annotated targets** (211 bboxes + 28 polygon segmentations)
 - **True Negatives:** **35 empty labels** (30 train, 3 valid, 2 test) verifying 100% background rejection
 - **Resolution:** $640 \times 640$ Fit (black edges)
@@ -67,13 +66,17 @@ The repository incorporates the official **Roboflow Dataset Version 3** download
 
 ---
 
-## 4. Detailed Documentation Index
+## 4. Master Technical Documentation Index
 
-1. **Full CAD Engineering Report:** [`M1_CAD_Design_Report.md`](./07_cad_design/M1_CAD_Design_Report.md)
-2. **CAD Technical Specification:** [`CAD_Design_Specification.md`](./07_cad_design/CAD_Design_Specification.md)
-3. **CAD File Metadata & Forensics:** [`CAD_File_Information.md`](./07_cad_design/CAD_File_Information.md)
-4. **Physical Photo Checklist:** [`PENDING_EVIDENCE_CHECKLIST.md`](./07_cad_design/PENDING_EVIDENCE_CHECKLIST.md)
+1. **Camera & Repository Overview:** [`01_camera_and_repo/README.md`](./01_camera_and_repo/README.md)
+2. **OpenCV Pipeline Report:** [`02_opencv_pipeline/M1_OpenCV_Pipeline_Report.md`](./02_opencv_pipeline/M1_OpenCV_Pipeline_Report.md)
+3. **Baseline Speed Performance Report:** [`M1_Baseline_Performance_Report.md`](./M1_Baseline_Performance_Report.md)
+4. **Historical Dataset Audit Report (124 Images):** [`dataset_audit_report.md`](./dataset_audit_report.md)
 5. **Dataset Version History:** [`dataset_version_history.md`](./dataset_version_history.md)
-6. **Roboflow Project Documentation:** [`04_dataset_v1/roboflow_project.md`](./04_dataset_v1/roboflow_project.md)
-7. **Baseline Performance Report:** [`M1_Baseline_Performance_Report.md`](./M1_Baseline_Performance_Report.md)
-8. **Initial Dataset Audit Report (124 Images):** [`dataset_audit_report.md`](./dataset_audit_report.md)
+6. **Roboflow Project & v3 Specifications:** [`04_dataset_v1/roboflow_project.md`](./04_dataset_v1/roboflow_project.md)
+7. **Dataset Split Verification Report:** [`05_correct_split/M1_Dataset_Split_Report.md`](./05_correct_split/M1_Dataset_Split_Report.md)
+8. **Training & Detection Evaluation Report:** [`06_train_and_run_detector/M1_Training_and_Detection_Report.md`](./06_train_and_run_detector/M1_Training_and_Detection_Report.md)
+9. **Full CAD Engineering Report:** [`07_cad_design/M1_CAD_Design_Report.md`](./07_cad_design/M1_CAD_Design_Report.md)
+10. **CAD Technical Specifications:** [`07_cad_design/CAD_Design_Specification.md`](./07_cad_design/CAD_Design_Specification.md)
+11. **CAD File Metadata & Forensics:** [`07_cad_design/CAD_File_Information.md`](./07_cad_design/CAD_File_Information.md)
+12. **Physical Photography Checklist:** [`07_cad_design/PENDING_EVIDENCE_CHECKLIST.md`](./07_cad_design/PENDING_EVIDENCE_CHECKLIST.md)

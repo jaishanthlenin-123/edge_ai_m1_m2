@@ -1,10 +1,10 @@
 # Dataset Audit & Root Cause Analysis Report: Raspberry Pi Camera Enclosure (M1_M2)
 
-**Author:** Senior Computer Vision Engineer  
-**Date:** November 6, 2026  
-**Project:** Roboflow M1_M2 / YOLO26 Nano Detection Pipeline  
-**Dataset Split Audited:** 124 Total Images (88 Train, 24 Validation, 12 Test)  
-**Hardware Platform:** NVIDIA GeForce RTX 3050 6GB Laptop GPU | PyTorch 2.6.0+cu124 | Ultralytics 8.4.202  
+**Author:** Senior Computer Vision Engineer
+**Date:** November 6, 2026
+**Project:** Roboflow M1_M2 / YOLO26 Nano Detection Pipeline
+**Dataset Split Audited:** 124 Total Images (88 Train, 24 Validation, 12 Test)
+**Hardware Platform:** NVIDIA GeForce RTX 3050 6GB Laptop GPU | PyTorch 2.6.0+cu124 | Ultralytics 8.4.202
 
 ---
 

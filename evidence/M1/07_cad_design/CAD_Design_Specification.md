@@ -1,12 +1,12 @@
 # CAD Design Specification: Raspberry Pi Camera Enclosure
 
-**Project:** Edge AI Object Detection System  
-**Hardware ID:** IDRP-HW-CAM-ENC-01  
-**Part Name:** Raspberry Pi Camera Protective Enclosure  
-**Design Authority:** Jaishanth  
-**CAD Model File:** [`ENCLOSURE_JAISHANTH.f3d`](./ENCLOSURE_JAISHANTH.f3d)  
-**Native Format:** Autodesk Fusion 360 Document Archive (`.f3d`)  
-**Target Camera:** Raspberry Pi Camera Module v2 / v3 (standard form factor)  
+**Project:** Edge AI Object Detection System
+**Hardware ID:** IDRP-HW-CAM-ENC-01
+**Part Name:** Raspberry Pi Camera Protective Enclosure
+**Design Authority:** Jaishanth
+**CAD Model File:** [`ENCLOSURE_JAISHANTH.f3d`](./ENCLOSURE_JAISHANTH.f3d)
+**Native Format:** Autodesk Fusion 360 Document Archive (`.f3d`)
+**Target Camera:** Raspberry Pi Camera Module v2 / v3 (standard form factor)
 
 ---
 

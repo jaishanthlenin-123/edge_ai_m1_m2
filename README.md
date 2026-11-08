@@ -101,17 +101,31 @@ edge_ai_m1_m2/
 │   └── export_onnx.py                     # PyTorch to ONNX graph exporter
 └── evidence/
     ├── M1/                                # Milestone 1: Audit, Quality Assurance & CAD
-    │   ├── README.md                      # M1 Central Evidence Index & Navigation
+    │   ├── README.md                      # M1 Central Evidence Index & Navigation Matrix
     │   ├── dataset_version_history.md     # Full dataset progression (v1 to v3)
     │   ├── 01_camera_and_repo/            # Camera setup & repository verification
+    │   │   ├── README.md                  # Camera setup documentation
+    │   │   └── camera_visuals/            # Initial frame & streaming captures
     │   ├── 02_opencv_pipeline/            # OpenCV video acquisition pipeline
+    │   │   ├── README.md                  # Pipeline overview
+    │   │   ├── M1_OpenCV_Pipeline_Report.md # Comprehensive vision pipeline report
+    │   │   └── detection_screenshots/     # Genuine live detection screenshots with HUD
     │   ├── 03_baseline_speed/             # Baseline unaccelerated benchmark logs & CSV
+    │   │   ├── README.md                  # Benchmark summary
+    │   │   └── benchmark_visuals/         # Baseline latency & system telemetry plots
     │   ├── 04_dataset_v1/                 # Dataset v1 audit, Roboflow v3 project & previews
     │   │   ├── README.md                  # Dataset audit overview & links
     │   │   ├── roboflow_project.md        # Roboflow platform context & v3 specs
+    │   │   ├── original_m1_audit_visuals/ # Historical audit defects (skin/loose boxes)
     │   │   └── roboflow_v3_previews/      # Genuine raw vs. annotated preview images
     │   ├── 05_correct_split/              # Train/validation/test split verification
+    │   │   ├── README.md                  # Split audit summary
+    │   │   ├── M1_Dataset_Split_Report.md # Domain isolation & leakage verification
+    │   │   └── split_visuals/             # 9 split sample images (train/valid/test)
     │   ├── 06_train_and_run_detector/     # Baseline model training & visual detections
+    │   │   ├── README.md                  # Training & detection summary
+    │   │   ├── M1_Training_and_Detection_Report.md # Full training & detection report
+    │   │   └── visual_evidence/           # Confusion matrix, PR curve & live test frames
     │   └── 07_cad_design/                 # IDRP Hardware CAD Evidence & 3D Drawings
     │       ├── README.md                  # CAD evidence navigation & summary
     │       ├── ENCLOSURE_JAISHANTH.f3d    # Preserved original CAD file (875 KB)
@@ -215,11 +229,11 @@ python3 src/detect_onnx.py --model models/best.onnx --source picam
 
 ### Milestone 1 (M1) Assessment Links
 1. **Camera & Repository Setup:** [`evidence/M1/01_camera_and_repo/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/01_camera_and_repo/)
-2. **OpenCV Video Pipeline:** [`evidence/M1/02_opencv_pipeline/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/02_opencv_pipeline/)
-3. **Baseline Speed Benchmark:** [`evidence/M1/03_baseline_speed/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/03_baseline_speed/)
-4. **Dataset Version 1 Audit & Roboflow v3:** [`evidence/M1/04_dataset_v1/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/04_dataset_v1/)
-5. **Correct Split Verification:** [`evidence/M1/05_correct_split/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/05_correct_split/)
-6. **Train & Run Detector Baseline:** [`evidence/M1/06_train_and_run_detector/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/06_train_and_run_detector/)
+2. **OpenCV Video Pipeline Report:** [`M1_OpenCV_Pipeline_Report.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/02_opencv_pipeline/M1_OpenCV_Pipeline_Report.md)
+3. **Baseline Speed Benchmark:** [`M1_Baseline_Performance_Report.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/M1_Baseline_Performance_Report.md)
+4. **Dataset Version 1 Audit & Roboflow v3:** [`dataset_audit_report.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/dataset_audit_report.md)
+5. **Correct Split Verification Report:** [`M1_Dataset_Split_Report.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/05_correct_split/M1_Dataset_Split_Report.md)
+6. **Train & Run Detector Report:** [`M1_Training_and_Detection_Report.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/06_train_and_run_detector/M1_Training_and_Detection_Report.md)
 7. **CAD Design – Direct CAD File Link:** [`ENCLOSURE_JAISHANTH.f3d`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d)
 8. **CAD Design – Evidence Folder Link:** [`evidence/M1/07_cad_design/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/07_cad_design/)
 9. **M1 Central Evidence Index:** [`evidence/M1/README.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/README.md)
