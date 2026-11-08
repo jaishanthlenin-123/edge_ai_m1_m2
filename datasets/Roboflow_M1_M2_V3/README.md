@@ -53,20 +53,22 @@ To enhance model robustness against real-world lighting, reflections, and orient
 
 | Split | Images | % of Total | Labels | Object Annotations | True Negatives (Empty Labels) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **Train** | **230** | 83.94% | 230 | 196 (176 bboxes + 20 polygons) | **30** |
-| **Valid** | **30** | 10.95% | 30 | 27 (24 bboxes + 3 polygons) | **3** |
-| **Test** | **14** | 5.11% | 14 | 12 (11 bboxes + 1 polygon) | **2** |
-| **Total** | **274** | **100.0%** | **274** | **235** (211 bboxes + 24 polygons) | **35** |
+| **Train** | **230** | 83.94% | 230 | **200** (176 bboxes + 24 polygons) | **30** |
+| **Valid** | **30** | 10.95% | 30 | **27** (24 bboxes + 3 polygons) | **3** |
+| **Test** | **14** | 5.11% | 14 | **12** (11 bboxes + 1 polygon) | **2** |
+| **Total** | **274** | **100.0%** | **274** | **239** (211 bboxes + 28 polygons) | **35** |
 
 ### Explanation of Roboflow Display Count vs. Source Images
-The Roboflow user interface displays **274 images**. This count is fully accounted for by:
-- **159 Unique Source Images:** 139 positive enclosure captures + 20 true negative background samples.
-- **Source Splits:**
-  - Train: 115 source images (100 positive + 15 negative)
-  - Valid: 30 unaugmented source images (27 positive + 3 negative)
-  - Test: 14 unaugmented source images (12 positive + 2 negative)
-- **Augmentation Multiplier:** 2 versions per training image $\rightarrow 115 \times 2 = 230$ training images.
-- **Total Exported Images:** $230\text{ (train)} + 30\text{ (valid)} + 14\text{ (test)} = \mathbf{274}\text{ images}$.
+The Roboflow user interface displays **274 images**. It is critical to distinguish between unique source captures and augmented exports:
+- **Original Source Dataset (159 Images):**
+  - **139 Positive Enclosure Photographs:** Captured under real-world desktop and handheld conditions.
+  - **20 True Negative Background Photographs:** Walls, curtains, desks, and empty hands with no enclosure present.
+  - **Source Splits:** Train (115 images: 100 positive + 15 negative), Valid (30 unaugmented images: 27 positive + 3 negative), Test (14 unaugmented images: 12 positive + 2 negative).
+- **Augmented Exported Dataset (274 Images):**
+  - The 115 original training images underwent a **$2\times$ augmentation pipeline** (horizontal flip, $\pm 10^\circ$ rotation, $\pm 15\%$ brightness, $\pm 15\%$ saturation), expanding the training split from 115 to **230 training images**.
+  - Validation (30 images) and Test (14 images) splits were preserved strictly unaugmented to guarantee uncompromised, unbiased evaluation.
+  - **Export Sum:** $230\text{ (train)} + 30\text{ (valid)} + 14\text{ (test)} = \mathbf{274}\text{ images}$.
+  - *Note:* Not all 274 exported images represent independently captured photographs; 115 training source images produced 230 training images via 2x augmentation.
 
 ---
 
@@ -75,10 +77,16 @@ The Roboflow user interface displays **274 images**. This count is fully account
 - **Number of Classes (`nc`):** `1`
 - **Class ID:** `0`
 - **Class Label:** `'RASPBERY PI CAM ENCLOSURE'`
-- **Annotation Formats Present:**
-  - **Standard YOLO Bounding Box:** `0 <x_center> <y_center> <width> <height>` (211 annotations)
-  - **YOLO Polygon Segmentation:** `0 <x1> <y1> <x2> <y2> ... <xn> <yn>` (28 annotations)
-  - **True Negative Backgrounds:** Empty `.txt` files (35 images) indicating zero targets for negative rejection training.
+- **Annotation Breakdown:**
+  - **Standard YOLO Bounding Boxes:** **211 annotations** formatted as `0 <x_center> <y_center> <width> <height>` with normalized coordinates in $[0.0, 1.0]$.
+  - **YOLO Polygon Segmentations:** **28 annotations** formatted as `0 <x1> <y1> <x2> <y2> ... <xn> <yn>` representing fine-grained contour polygons.
+  - **True Negative Backgrounds:** **35 empty label files** (`.txt` size 0 bytes: 30 train, 3 valid, 2 test) providing explicit negative rejection signals.
+  - **Total Ground Truth Targets:** **239 annotations** across 274 image files.
+
+### Annotation Compatibility Analysis for YOLO26 Nano
+- **Format Verification:** The 28 polygon annotations are represented as native Roboflow segmentation vertex coordinates rather than pre-converted axis-aligned boxes.
+- **Pipeline Compatibility:** Ultralytics YOLO26 Nano (`ultralytics` engine) natively supports polygon segmentation coordinates during object detection training (`yolo detect train`). The data loader automatically computes the minimum enclosing bounding rectangle ($x_{\min}, y_{\min}, x_{\max}, y_{\max}$) on the fly for detection loss computation while retaining polygon boundaries for data augmentation transformations.
+- **Data Preservation:** In accordance with strict data integrity standards, all original polygon coordinate streams are preserved completely intact in their exported format without manual or destructive down-conversion.
 
 ---
 

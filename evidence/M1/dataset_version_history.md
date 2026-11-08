@@ -59,6 +59,13 @@ This document details the evolution of the dataset used in the Edge AI detection
 | **Test Set mAP@50** | Baseline (~82%) | ~91.5% | **99.31%** |
 | **Storage Location** | Historical M1 Audit Logs | Intermediate Scratch | [`datasets/Roboflow_M1_M2_V3/`](../../datasets/Roboflow_M1_M2_V3/) |
 
+### Source vs. Augmented Breakdown (Version 3)
+- **Source Counts (159 Images):** 115 training images, 30 validation images, 14 test images.
+- **Exported Counts (274 Images):** 230 training images, 30 validation images, 14 test images.
+- *Clarification:* Not all 274 exported images represent independently captured photographs. The 115 original training photographs were expanded to 230 images through a $2\times$ augmentation pipeline, whereas validation (30) and test (14) splits were kept unaugmented to ensure uncorrupted evaluation.
+- **Annotation Breakdown:** 211 standard YOLO bounding boxes, 28 polygon segmentations, and 35 empty-label background images.
+- **YOLO26 Nano Compatibility:** Ultralytics YOLO26 Nano handles polygon segmentations natively during detection training by dynamically computing enclosing bounding boxes on the fly, preserving the original polygon annotations without data loss.
+
 ---
 
 ## 3. Preservation of Historical M1 Audit Evidence

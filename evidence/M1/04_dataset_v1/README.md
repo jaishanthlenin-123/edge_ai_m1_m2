@@ -29,4 +29,6 @@ This module documents the comprehensive quality assurance audit performed on the
 2. **Class Typo Identified:** Original project label recorded in Roboflow as `'RASPBERY PI CAM ENCLOSURE'` (single 'r').
 3. **Absence of Negative Samples:** Zero true negative images existed in Version 1, causing the initial model to produce 73.2% confidence false positives on blank curtains and plain walls.
 4. **Corrective Action & Version 3:** Ground truth annotations were systematically tightened, and **20 verified true negative images** were integrated into **Dataset Version 3** (augmented to 35 empty label files in the export), completely eliminating background activations (**0.0% false positives**).
-5. **Roboflow Project Link:** [https://app.roboflow.com/jaishanth-s-workspace/m1_m2/3](https://app.roboflow.com/jaishanth-s-workspace/m1_m2/3)
+5. **Source vs. Augmented Counts:** The 274 exported images comprise **159 original source images** (115 train, 30 valid, 14 test) and **274 exported images** (230 train, 30 valid, 14 test) via a $2\times$ augmentation pipeline applied exclusively to the training set.
+6. **Annotation Compatibility:** The dataset contains **211 bounding boxes**, **28 polygon segmentations**, and **35 empty labels** (true negatives). Ultralytics YOLO26 Nano natively parses polygon segmentations into bounding boxes during detection training without data loss.
+7. **Roboflow Project Link:** [https://app.roboflow.com/jaishanth-s-workspace/m1_m2/3](https://app.roboflow.com/jaishanth-s-workspace/m1_m2/3)

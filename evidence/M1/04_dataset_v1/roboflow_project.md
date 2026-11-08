@@ -27,11 +27,24 @@
 | **Version ID** | `m1_m2-3` | Version 3 |
 | **Target Class** | `RASPBERY PI CAM ENCLOSURE` | Single target class (ID `0`) |
 | **Original Source Images** | **159 images** | 139 positive enclosure + 20 negative background |
-| **Exported Total Images** | **274 images** | Includes 2x data augmentation on training set |
-| **Split Breakdown** | **Train:** 230 imgs (83.9%) \| **Valid:** 30 imgs (11.0%) \| **Test:** 14 imgs (5.1%) |
+| **Exported Total Images** | **274 images** | Includes 2x data augmentation on training set (115 -> 230) |
+| **Split Breakdown** | **Train:** 230 imgs (83.94%) \| **Valid:** 30 imgs (10.95%) \| **Test:** 14 imgs (5.11%) |
+| **Annotation Counts** | **239 targets** (211 bboxes + 28 polygons) | **35 empty labels** (true negatives: 30 train, 3 valid, 2 test) |
 | **Input Resolution** | **640 × 640** | Fit (black edges) letterbox |
 | **Augmentation** | Flip (H), Rotate ($\pm 10^\circ$), Brightness ($\pm 15\%$), Saturation ($\pm 15\%$) | 2 versions per train image |
-| **Local Download Path** | [`datasets/Roboflow_M1_M2_V3/`](../../../datasets/Roboflow_M1_M2_V3/) | Full YOLOv8 format export |
+| **Annotation Format** | Native YOLOv8 Bounding Box & Polygon Segmentation | Natively parsed by Ultralytics YOLO26 Nano |
+| **Local Download Path** | [`datasets/Roboflow_M1_M2_V3/`](../../../datasets/Roboflow_M1_M2_V3/) | Full YOLO export preserved intact |
+
+### Source vs. Augmented Image Count Clarification
+- **Source Counts (159 Images):** 115 training images, 30 validation images, 14 test images.
+- **Exported Counts (274 Images):** 230 training images, 30 validation images, 14 test images.
+- *Crucial Clarification:* The 274 exported images do not represent 274 independently captured photographs. Rather, 115 training source photographs were expanded to 230 images through a $2\times$ augmentation pipeline, while validation (30) and test (14) sets remained strictly unaugmented.
+
+### Annotation Compatibility with YOLO26 Nano
+- **211 Bounding Boxes:** Standard normalized coordinates (`0 x_center y_center width height`).
+- **28 Polygon Segmentations:** Exact boundary polygons (`0 x1 y1 x2 y2 ... xn yn`).
+- **35 True Negative Background Images:** Empty label files.
+- **Compatibility:** Ultralytics YOLO26 Nano detection engine automatically converts polygon segmentations to enclosing bounding rectangles during detection training on the fly, eliminating any need for destructive manual conversions.
 
 ---
 
