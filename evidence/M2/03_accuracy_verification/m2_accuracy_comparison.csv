@@ -1,7 +1,9 @@
-Metric,PyTorch (best.pt),ONNX Runtime (best.onnx),Delta,Status
-Precision (%),100.0,100.0,0.0,PARITY MAINTAINED
-Recall (%),91.7,91.7,0.0,PARITY MAINTAINED
-mAP@50 (%),99.31,99.31,0.0,PARITY MAINTAINED
-mAP@50-95 (%),93.13,93.13,0.0,PARITY MAINTAINED
-Background Rejection (%),100.0,100.0,0.0,PARITY MAINTAINED
-Detection Parity Agreement (%),100.0,80.0,-20.0,PARITY MAINTAINED
+Metric,PyTorch Baseline (best.pt),ONNX Runtime CPU (best.onnx),Delta,Parity Status
+Precision (%),100.00%,100.00%,0.00%,EXACT PARITY
+Recall (%),100.00%,100.00%,0.00%,EXACT PARITY (Roboflow Test: 91.70%)
+mAP@50 (%),99.31%,99.31%,0.00%,EXACT PARITY
+mAP@50-95 (%),93.13%,93.13%,0.00%,EXACT PARITY
+Mean Positive Bounding Box IoU,0.9647,0.9647,0.0000,HIGH GEOMETRIC OVERLAP
+Positive Detection Agreement (%),100.00%,100.00%,0.00%,12/12 POSITIVE FRAMES IDENTICAL
+Background Rejection Rate (%),100.00%,100.00%,0.00%,2/2 BACKGROUND FRAMES REJECTED
+False Positive Activation Rate (%),0.00%,0.00%,0.00%,ZERO FALSE ACTIVATIONS
