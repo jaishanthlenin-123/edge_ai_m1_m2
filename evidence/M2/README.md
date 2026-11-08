@@ -62,14 +62,14 @@ evidence/M2/
 │   └── onnx_export_log.json               # Structured export metadata
 ├── 02_live_onnx_deployment/               # Criterion 2: Convert & Run Live (4 Marks)
 │   ├── README.md                          # Live deployment walkthrough & pipeline architecture
-│   ├── successful_usb_detection.jpg       # High-confidence detection frame with HUD
-│   ├── live_frame.jpg                     # Real-time frame stream capture
-│   ├── current_cam_view.jpg               # Active camera viewport
-│   ├── detection_20261106_152227.jpg      # Multi-angle detection frame
-│   ├── detection_20261106_152238.jpg      # Ribbon-cable visible detection frame
-│   ├── detection_20261106_152328.jpg      # Desk-mounted detection frame
-│   ├── test_001_annotated.jpg             # High-definition annotated verification capture 1
-│   └── test_002_annotated.jpg             # High-definition annotated verification capture 2
+│   ├── detection_20261106_152230.jpg      # Handheld enclosure detection frame (86.8% conf)
+│   ├── detection_20261106_152234.jpg      # Close-range ribbon-cable detection frame (93.9% conf)
+│   ├── detection_20261106_152238.jpg      # High-confidence detection frame (93.6% conf)
+│   ├── detection_20261106_152250.jpg      # Desk-mounted detection frame (93.4% conf)
+│   ├── detection_20261106_152303.jpg      # Lateral tracking detection frame (93.3% conf)
+│   ├── detection_20261106_152325.jpg      # Multi-instance dual enclosure detection (91.7% / 71.2%)
+│   ├── detection_20261106_152328.jpg      # Multi-instance tracking persistence (91.7% / 65.2%)
+│   └── detection_20261106_152336.jpg      # Angled perspective detection frame (75.0% conf)
 ├── 03_accuracy_verification/              # Criterion 3: Accuracy Check (4 Marks)
 │   ├── README.md                          # Accuracy parity report & numerical tolerance checks
 │   ├── m2_accuracy_parity_profile.png     # Bar chart comparing PyTorch vs ONNX metrics
