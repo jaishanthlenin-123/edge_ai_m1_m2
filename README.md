@@ -139,10 +139,17 @@ edge_ai_m1_m2/
     │       ├── CAD_File_Information.md    # File forensics, checksums & viewer guide
     │       └── PENDING_EVIDENCE_CHECKLIST.md # Physical 3D-print photo capture checklist
     └── M2/                                # Milestone 2: Optimization & Edge Deployment
-        ├── README.md                      # M2 benchmark summary & comparison
-        ├── reports/                       # Optimization, ONNX, and accuracy reports
-        ├── csv/                           # Comprehensive latency & benchmark measurements
-        ├── accuracy_results/              # Test set evaluation metrics & confusion matrices
+        ├── README.md                      # M2 Central Evidence Index & Navigation Matrix
+        ├── M2_ASSESSMENT_LINKS.md         # Direct Sheet Submission Links (Cells D, F, H, J, L, N)
+        ├── 01_onnx_export/                # Criterion 1: Export to ONNX (3 Marks)
+        ├── 02_live_onnx_deployment/       # Criterion 2: Convert & Run Live (4 Marks)
+        ├── 03_accuracy_verification/      # Criterion 3: Accuracy Check (4 Marks)
+        ├── 04_fair_benchmark/             # Criterion 4: Fair Benchmark (4 Marks)
+        ├── 05_cpu_accelerator_comparison/ # Criterion 5: CPU vs Accelerator Stack (2 Marks)
+        ├── 06_optimization_tradeoff/      # Criterion 6: Own Target & Trade-Off (3 Marks)
+        ├── reports/                       # Standalone technical reports & analysis
+        ├── csv/                           # Sustained benchmark latency telemetry CSVs
+        ├── accuracy_results/              # Parity evaluations & confusion matrices
         └── manual_camera_tests/           # 15 real-world edge scenario test captures
 ```
 
@@ -247,6 +254,13 @@ python3 src/detect_onnx.py --model models/best.onnx --source picam
 
 ### Milestone 2 (M2) Assessment Links
 - **M2 Central Evidence Index:** [`evidence/M2/README.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M2/README.md)
+- **M2 Assessment Links Reference Sheet (Google Sheet Cells D, F, H, J, L, N):** [`evidence/M2/M2_ASSESSMENT_LINKS.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M2/M2_ASSESSMENT_LINKS.md)
+1. **Export to ONNX (Cell D - 3 Marks):** [`evidence/M2/01_onnx_export/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M2/01_onnx_export/)
+2. **Convert and Run Live (Cell F - 4 Marks):** [`evidence/M2/02_live_onnx_deployment/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M2/02_live_onnx_deployment/)
+3. **Accuracy Check (Cell H - 4 Marks):** [`evidence/M2/03_accuracy_verification/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M2/03_accuracy_verification/)
+4. **Fair Benchmark (Cell J - 4 Marks):** [`evidence/M2/04_fair_benchmark/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M2/04_fair_benchmark/)
+5. **CPU vs Accelerator Stack (Cell L - 2 Marks):** [`evidence/M2/05_cpu_accelerator_comparison/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M2/05_cpu_accelerator_comparison/)
+6. **Own Target and Trade-Off (Cell N - 3 Marks):** [`evidence/M2/06_optimization_tradeoff/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M2/06_optimization_tradeoff/)
 - **M2 Final Optimization Report:** [`evidence/M2/reports/M2_Final_Optimization_Report.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M2/reports/M2_Final_Optimization_Report.md)
 - **M2 Accuracy Comparison Report:** [`evidence/M2/reports/M2_Accuracy_Comparison.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M2/reports/M2_Accuracy_Comparison.md)
 - **M2 Latency & Throughput CSV Measurements:** [`evidence/M2/csv/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M2/csv/)

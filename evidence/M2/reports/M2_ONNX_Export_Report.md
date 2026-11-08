@@ -1,10 +1,10 @@
 # Milestone 2 (M2) — ONNX Model Export & Verification Report
 
-**Project:** Raspberry Pi Camera Enclosure Detection – Edge AI & Embedded Vision  
-**Target Hardware:** Raspberry Pi 5 Model B Rev 1.1 (Broadcom BCM2712 Cortex-A76 @ 2.4 GHz)  
-**Task Requirement:** ONNX Model Export (3 Marks)  
-**Date:** November 6, 2026  
-**Status:** Successfully Completed & Verified  
+**Project:** Raspberry Pi Camera Enclosure Detection – Edge AI & Embedded Vision
+**Target Hardware:** Raspberry Pi 5 Model B Rev 1.1 (Broadcom BCM2712 Cortex-A76 @ 2.4 GHz)
+**Task Requirement:** ONNX Model Export (3 Marks)
+**Date:** November 6, 2026
+**Status:** Successfully Completed & Verified
 
 ---
 
@@ -88,7 +88,7 @@ $$\Delta_{\text{abs}} = | Y_{\text{PyTorch}} - Y_{\text{ONNX}} |$$
 
 ## 6. Export Artifacts & Evidence Locations
 
-- **Exported Model Weights:** [`models/onnx/best.onnx`](file:///home/forge/Downloads/edge12/edge_ai_camera_enclosure/models/onnx/best.onnx)
-- **Original Model Weights (Untouched):** [`models/best.pt`](file:///home/forge/Downloads/edge12/edge_ai_camera_enclosure/models/best.pt)
-- **Export Raw Execution Log:** [`evidence/M2/export_logs/onnx_export_log.txt`](file:///home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M2/export_logs/onnx_export_log.txt)
-- **Structured JSON Manifest:** [`evidence/M2/export_logs/onnx_export_log.json`](file:///home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M2/export_logs/onnx_export_log.json)
+- **Exported Model Weights:** [`models/onnx/best.onnx`](../../../models/onnx/best.onnx)
+- **Original Model Weights (Untouched):** [`models/best.pt`](../../../models/best.pt)
+- **Export Raw Execution Log:** [`evidence/M2/export_logs/onnx_export_log.txt`](../export_logs/onnx_export_log.txt)
+- **Structured JSON Manifest:** [`evidence/M2/export_logs/onnx_export_log.json`](../export_logs/onnx_export_log.json)

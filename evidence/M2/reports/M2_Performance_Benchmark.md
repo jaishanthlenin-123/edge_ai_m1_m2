@@ -44,6 +44,6 @@ Both runs sustained stable operation without inducing thermal throttling (`0x0`)
 ---
 
 ## 3. Evidence Artifacts
-- **PyTorch Benchmark CSV:** [`evidence/M2/csv/pytorch_benchmark.csv`](file:///home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M2/csv/pytorch_benchmark.csv) (142 frames)
-- **ONNX Benchmark CSV:** [`evidence/M2/csv/onnx_benchmark.csv`](file:///home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M2/csv/onnx_benchmark.csv) (150 frames)
-- **Comparison CSV:** [`evidence/M2/csv/m2_performance_comparison.csv`](file:///home/forge/Downloads/edge12/edge_ai_camera_enclosure/evidence/M2/csv/m2_performance_comparison.csv)
+- **PyTorch Benchmark CSV:** [`evidence/M2/csv/pytorch_benchmark.csv`](../csv/pytorch_benchmark.csv) (142 frames)
+- **ONNX Benchmark CSV:** [`evidence/M2/csv/onnx_benchmark.csv`](../csv/onnx_benchmark.csv) (150 frames)
+- **Comparison CSV:** [`evidence/M2/csv/m2_performance_comparison.csv`](../csv/m2_performance_comparison.csv)

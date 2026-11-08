@@ -1,0 +1,13 @@
+=================================================================
+  YOLO26 NANO - ONNX EXPORT AND VERIFICATION LOG
+=================================================================
+
+Source PyTorch Checkpoint: /home/forge/Downloads/edge12/edge_ai_camera_enclosure/models/best.pt (5419973 bytes)
+Exported ONNX Model:       /home/forge/Downloads/edge12/edge_ai_camera_enclosure/models/onnx/best.onnx (9747454 bytes)
+Opset Version:             17
+Input Shape:               [1, 3, 640, 640]
+Output Shape:              [1, 5, 8400]
+Export Duration:           2.42 seconds
+Max Difference (PT vs ORT):6.103516e-04
+Equivalence Status:        PASSED (< 1e-4 tolerance)
+Active Providers:          ['CPUExecutionProvider']
