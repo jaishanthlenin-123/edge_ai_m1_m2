@@ -28,12 +28,12 @@ The detected object is the **Raspberry Pi Camera Enclosure**, an original hardwa
 | :--- | :--- | :--- |
 | **Project Name** | Raspberry Pi Camera Enclosure Detection using Edge AI | Embedded Vision / Edge AI |
 | **Framework** | **YOLO26 Nano** (`yolo26n`) | Anchor-free decoupled head |
-| **Source Platform** | **Roboflow Cloud** | Project: `jaishanth-s-workspace/m1_m2` |
+| **Source Platform** | **Roboflow Cloud** | Project: [`jaishanth-s-workspace/m1_m2`](https://app.roboflow.com/jaishanth-s-workspace/m1_m2/3) |
 | **Model Version** | **Version 3** | ID: `jaishanth-s-workspace/m1_m2-3-yolo26n-t1` |
 | **Target Class** | `RASPBERY PI CAM ENCLOSURE` | Single-class detector (ID `0`) |
-| **Initial Dataset** | 124 images | Initial audit phase (Milestone 1) |
-| **Final Dataset (v3)** | **159 source images** (139 positive + 20 negative) | 274 augmented images |
-| **Dataset Splits** | **Train:** 71% (115 imgs) \| **Valid:** 19% (30 imgs) \| **Test:** 10% (14 imgs) | Verified balanced splits |
+| **Historical Baseline (M1)** | 124 images | Initial audit phase ([`dataset_audit_report.md`](evidence/M1/dataset_audit_report.md)) |
+| **Final Dataset (v3)** | **159 source images** (139 positive + 20 negative) | **274 augmented images** ([`datasets/Roboflow_M1_M2_V3/`](datasets/Roboflow_M1_M2_V3/)) |
+| **Dataset Splits** | **Train:** 230 imgs (83.9%) \| **Valid:** 30 imgs (11.0%) \| **Test:** 14 imgs (5.1%) | Augmented 2x on training split |
 | **Input Resolution** | **640 × 640** | Aspect ratio preserved (Letterbox: Fit in) |
 | **Training Epochs** | **311 epochs** (Auto early-stop converged) | Cloud GPU cluster |
 | **Weights File (PyTorch)** | `models/best.pt` (**5.17 MB** / 5,419,973 bytes) | SHA256: `43C1ABDDC728...` |
@@ -41,7 +41,7 @@ The detected object is the **Raspberry Pi Camera Enclosure**, an original hardwa
 
 ---
 
-## 3. Actual Benchmark Metrics
+## 3. Actual Benchmark Metrics & Dataset Evolution
 
 ### Roboflow Cloud Version 3 Metrics (Official Test Results)
 ```
@@ -57,6 +57,7 @@ Test          12        14      100.00%     91.70%    99.31%     93.13%
 - **Validation F1 Score:** `0.981` (at optimal threshold `conf=0.38`)
 - **False-Positive Detections on Negative Images:** **0.0%** (100% background rejection)
 - **Elimination of Wall/Curtain False Positive:** The previous model's 73.2% confidence activation on blank curtains was completely resolved by integrating 20 true negative background samples into Version 3.
+- **Dataset Evolution History:** Detailed timeline in [`evidence/M1/dataset_version_history.md`](evidence/M1/dataset_version_history.md).
 
 ---
 
@@ -70,6 +71,13 @@ edge_ai_m1_m2/
 ├── .gitignore                             # Git ignore excluding cache & secrets
 ├── config/
 │   └── data.yaml                          # YOLO dataset & class configuration
+├── datasets/
+│   └── Roboflow_M1_M2_V3/                 # Full exported Roboflow Version 3 dataset (8.65 MB)
+│       ├── README.md                      # Dataset specifications, splits & integrity report
+│       ├── data.yaml                      # YOLOv8 dataset configuration
+│       ├── train/                         # 230 training images & labels
+│       ├── valid/                         # 30 validation images & labels
+│       └── test/                          # 14 testing images & labels
 ├── models/
 │   ├── best.pt                            # Trained PyTorch YOLO26 Nano weights (5.17 MB)
 │   ├── best.onnx                          # Exported ONNX graph for RPi 5 CPU (9.34 MB)
@@ -94,13 +102,18 @@ edge_ai_m1_m2/
 └── evidence/
     ├── M1/                                # Milestone 1: Audit, Quality Assurance & CAD
     │   ├── README.md                      # M1 Central Evidence Index & Navigation
+    │   ├── dataset_version_history.md     # Full dataset progression (v1 to v3)
     │   ├── 01_camera_and_repo/            # Camera setup & repository verification
     │   ├── 02_opencv_pipeline/            # OpenCV video acquisition pipeline
     │   ├── 03_baseline_speed/             # Baseline unaccelerated benchmark logs & CSV
-    │   ├── 04_dataset_v1/                 # Dataset v1 audit & annotation error catalog
+    │   ├── 04_dataset_v1/                 # Dataset v1 audit, Roboflow v3 project & previews
+    │   │   ├── README.md                  # Dataset audit overview & links
+    │   │   ├── roboflow_project.md        # Roboflow platform context & v3 specs
+    │   │   └── roboflow_v3_previews/      # Genuine raw vs. annotated preview images
     │   ├── 05_correct_split/              # Train/validation/test split verification
     │   ├── 06_train_and_run_detector/     # Baseline model training & visual detections
     │   └── 07_cad_design/                 # IDRP Hardware CAD Evidence & 3D Drawings
+    │       ├── README.md                  # CAD evidence navigation & summary
     │       ├── ENCLOSURE_JAISHANTH.f3d    # Preserved original CAD file (875 KB)
     │       ├── cad_multi_view_drawing.png # 4-view engineering drawing sheet
     │       ├── cad_isometric_view.png     # Genuine 3D exploded isometric render
@@ -135,20 +148,6 @@ The custom Raspberry Pi Camera Enclosure was modeled by **Jaishanth** as an **In
 - **File Size:** **874,983 bytes** (854.48 KB / ~875 KB)
 - **SHA-256 Checksum:** `84444cee13753f74e86be3e41a7b0b865c8727c2576d06237835fc374914a4e1`
 - **Integrity Status:** **100% verified, accessible, and preserved without modification.**
-
-### 5.2 Key Engineering Dimensions (Extracted Directly from CAD)
-- **Footprint Envelope:** **64.0 mm (W)** × **71.0 mm (L)**
-- **Exploded Total Height:** **36.0 mm** (Assembled Chassis Height: ~18.0 mm)
-- **Camera Lens Aperture:** **Ø 16.0 mm** circular opening centered at $(0, 0)$
-- **Mounting Standoff Spacing:** **21.0 mm (X)** × **12.5 mm (Y/Z)** matching Raspberry Pi Camera Module v2
-- **Ribbon Cable (FFC) Egress Slot:** **18.0 mm (W)** × **2.5 mm (H)**
-- **Material Specification:** 3D Printable Polymer (PLA / PETG recommended for FDM manufacturing)
-
-### 5.3 Dedicated CAD Documentation
-- [`M1_CAD_Design_Report.md`](evidence/M1/07_cad_design/M1_CAD_Design_Report.md): Detailed design purpose, features, manufacturing guidelines, and Edge AI model relationship.
-- [`CAD_Design_Specification.md`](evidence/M1/07_cad_design/CAD_Design_Specification.md): Dimensional tolerances, assembly stack-up, and 3D printing parameters.
-- [`CAD_File_Information.md`](evidence/M1/07_cad_design/CAD_File_Information.md): Checksums, internal data stream forensics, and Autodesk Viewer instructions.
-- [`PENDING_EVIDENCE_CHECKLIST.md`](evidence/M1/07_cad_design/PENDING_EVIDENCE_CHECKLIST.md): Structured checklist for capturing physical 3D-printed enclosure photographs.
 
 ---
 
@@ -218,12 +217,19 @@ python3 src/detect_onnx.py --model models/best.onnx --source picam
 1. **Camera & Repository Setup:** [`evidence/M1/01_camera_and_repo/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/01_camera_and_repo/)
 2. **OpenCV Video Pipeline:** [`evidence/M1/02_opencv_pipeline/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/02_opencv_pipeline/)
 3. **Baseline Speed Benchmark:** [`evidence/M1/03_baseline_speed/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/03_baseline_speed/)
-4. **Dataset Version 1 Audit:** [`evidence/M1/04_dataset_v1/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/04_dataset_v1/)
+4. **Dataset Version 1 Audit & Roboflow v3:** [`evidence/M1/04_dataset_v1/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/04_dataset_v1/)
 5. **Correct Split Verification:** [`evidence/M1/05_correct_split/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/05_correct_split/)
 6. **Train & Run Detector Baseline:** [`evidence/M1/06_train_and_run_detector/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/06_train_and_run_detector/)
 7. **CAD Design – Direct CAD File Link:** [`ENCLOSURE_JAISHANTH.f3d`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d)
 8. **CAD Design – Evidence Folder Link:** [`evidence/M1/07_cad_design/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/07_cad_design/)
 9. **M1 Central Evidence Index:** [`evidence/M1/README.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/README.md)
+
+### Roboflow Dataset Version 3 Links
+- **Roboflow Cloud Project:** [`jaishanth-s-workspace/m1_m2/3`](https://app.roboflow.com/jaishanth-s-workspace/m1_m2/3)
+- **Local Dataset Directory:** [`datasets/Roboflow_M1_M2_V3/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/datasets/Roboflow_M1_M2_V3/)
+- **Dataset Version History:** [`evidence/M1/dataset_version_history.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/dataset_version_history.md)
+- **Dataset Version 3 Specification:** [`datasets/Roboflow_M1_M2_V3/README.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/datasets/Roboflow_M1_M2_V3/README.md)
+- **Visual Previews (Raw & Annotated):** [`evidence/M1/04_dataset_v1/roboflow_v3_previews/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/04_dataset_v1/roboflow_v3_previews/)
 
 ### Milestone 2 (M2) Assessment Links
 - **M2 Central Evidence Index:** [`evidence/M2/README.md`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M2/README.md)

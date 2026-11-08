@@ -1,0 +1,12 @@
+names:
+- RASPBERY PI CAM ENCLOSURE
+nc: 1
+roboflow:
+  license: Private
+  project: m1_m2
+  url: https://app.roboflow.com/jaishanth-s-workspace/m1_m2/3
+  version: 3
+  workspace: jaishanth-s-workspace
+test: ../test/images
+train: ../train/images
+val: ../valid/images
