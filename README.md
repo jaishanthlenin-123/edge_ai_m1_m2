@@ -255,7 +255,18 @@ python3 src/detect_onnx.py --model models/best.onnx --source picam
 
 ---
 
+## Photos & Videos Evidence – M1/M2
+
+All practical demonstration photographs, hardware images, camera captures, screenshots and video recordings for Milestones 1 and 2 are organized in the following Google Drive folder.
+
+[Open M1/M2 Photos & Videos Evidence Folder](https://drive.google.com/drive/folders/1J-PwAAhBoObjruYKZ6qn_V1JmQRSrPKM?usp=sharing)
+
+---
+
 ## 9. Final Milestone Evidence & Evaluation Navigation
+
+### Photos & Videos Drive Evidence
+- **Google Drive Folder (M1/M2):** [Open M1/M2 Photos & Videos Evidence Folder](https://drive.google.com/drive/folders/1J-PwAAhBoObjruYKZ6qn_V1JmQRSrPKM?usp=sharing)
 
 ### Milestone 1 (M1) Assessment Links
 1. **Camera & Repository Setup:** [`evidence/M1/01_camera_and_repo/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/01_camera_and_repo/)

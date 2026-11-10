@@ -8,6 +8,14 @@
 
 ---
 
+## Photos & Videos Evidence – M1/M2
+
+All practical demonstration photographs, hardware images, camera captures, screenshots and video recordings for Milestones 1 and 2 are organized in the following Google Drive folder.
+
+[Open M1/M2 Photos & Videos Evidence Folder](https://drive.google.com/drive/folders/1J-PwAAhBoObjruYKZ6qn_V1JmQRSrPKM?usp=sharing)
+
+---
+
 ## 1. M2 Assessment Evidence Navigation Matrix
 
 The table below maps each official Milestone 2 assessment criterion directly to its dedicated evidence directory, technical documentation, and assessment sheet cell identifier:

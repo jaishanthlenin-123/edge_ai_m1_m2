@@ -4,6 +4,14 @@ This directory serves as the primary evaluation portal for **Milestone 1 (M1)** 
 
 ---
 
+## Photos & Videos Evidence – M1/M2
+
+All practical demonstration photographs, hardware images, camera captures, screenshots and video recordings for Milestones 1 and 2 are organized in the following Google Drive folder.
+
+[Open M1/M2 Photos & Videos Evidence Folder](https://drive.google.com/drive/folders/1J-PwAAhBoObjruYKZ6qn_V1JmQRSrPKM?usp=sharing)
+
+---
+
 ## 1. M1 Assessment Navigation & Visual Evidence Matrix
 
 All Milestone 1 assessment requirements are systematically indexed below with direct repository navigation to reports, data logs, and embedded genuine visual evidence:
