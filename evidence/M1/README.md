@@ -16,7 +16,7 @@ All Milestone 1 assessment requirements are systematically indexed below with di
 | **04** | **Dataset Version 1 Audit & v3** | **4** | [`dataset_audit_report.md`](./dataset_audit_report.md) | [`04_dataset_v1/original_m1_audit_visuals/`](./04_dataset_v1/original_m1_audit_visuals/) & [`roboflow_v3_previews/`](./04_dataset_v1/roboflow_v3_previews/) | 124-image audit, skin contamination proof, error catalog, evolution to Version 3 (24 raw & annotated previews) |
 | **05** | **Correct Split Verification**| **2** | [`M1_Dataset_Split_Report.md`](./05_correct_split/M1_Dataset_Split_Report.md) | [`05_correct_split/split_visuals/`](./05_correct_split/split_visuals/) | Split distribution (Train: 230, Valid: 30, Test: 14), 0 hash collisions, 9 split samples (train/valid/test pairs) |
 | **06** | **Train & Run Detector** | **5** | [`M1_Training_and_Detection_Report.md`](./06_train_and_run_detector/M1_Training_and_Detection_Report.md) | [`06_train_and_run_detector/visual_evidence/`](./06_train_and_run_detector/visual_evidence/) | Converged training curves, held-out test confusion matrix (100% precision, 91.7% recall), live detections, failure cases |
-| **07** | **CAD Design Evidence (IDRP)**| **Extra** | [`M1_CAD_Design_Report.md`](./07_cad_design/M1_CAD_Design_Report.md) | [`07_cad_design/`](./07_cad_design/) | Preserved master CAD archive (`ENCLOSURE_JAISHANTH.f3d`), authentic Fusion 360 design views & specifications |
+| **07** | **CAD Design Evidence (IDRP)**| **Extra** | [`M1_CAD_Design_Report.md`](./07_cad_design/M1_CAD_Design_Report.md) | [`07_cad_design/`](./07_cad_design/) | Master CAD archive (`ENCLOSURE_JAISHANTH.f3d`), physical 3D-printed prototype, authentic Fusion 360 views & specs |
 
 ---
 
@@ -36,7 +36,14 @@ The Raspberry Pi Camera Enclosure is the primary hardware component developed as
 | ![CAD Perspective View](./07_cad_design/cad_perspective_view.png) | ![CAD Side Profile](./07_cad_design/cad_side_view.png) |
 | *Autodesk Fusion 360 perspective view showing camera PCB chamber and bevel* | *Autodesk Fusion 360 lateral elevation showing ribbon cable exit slot notch* |
 
-### 2.2 CAD Model Verification & Integrity
+### 2.2 Physical 3D-Printed Prototype Hardware Evidence
+
+| Fabricated Physical Enclosure Prototype (IDRP Hardware Component) |
+| :---: |
+| ![Physical Enclosure Prototype](./07_cad_design/physical_prototype/enclosure_physical_prototype.jpeg) |
+| *Figure 2.5: High-resolution physical prototype photograph of the 3D-printed camera enclosure, confirming physical realization of the Autodesk Fusion 360 geometry.* |
+
+### 2.3 CAD Model Verification & Integrity
 - **Original CAD File:** [`ENCLOSURE_JAISHANTH.f3d`](./07_cad_design/ENCLOSURE_JAISHANTH.f3d)
 - **Direct GitHub Link (CAD File):** [Download / Inspect `ENCLOSURE_JAISHANTH.f3d`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d)
 - **CAD Evidence Folder:** [`evidence/M1/07_cad_design/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/07_cad_design/)
@@ -46,11 +53,12 @@ The Raspberry Pi Camera Enclosure is the primary hardware component developed as
 - **SHA-256 Checksum:** `84444cee13753f74e86be3e41a7b0b865c8727c2576d06237835fc374914a4e1`
 - **Integrity Status:** **Verified 100% accessible and non-corrupted.**
 
-### 2.3 Verified Design Views
+### 2.4 Verified Design & Hardware Views
 - **3D Isometric View (Fusion 360 Native Render):** [`cad_isometric_view.png`](./07_cad_design/cad_isometric_view.png)
 - **Front Elevation View (Autodesk Fusion 360):** [`cad_front_view.png`](./07_cad_design/cad_front_view.png)
 - **Perspective / Chamber View (Autodesk Fusion 360):** [`cad_perspective_view.png`](./07_cad_design/cad_perspective_view.png)
 - **Lateral Elevation View (Autodesk Fusion 360):** [`cad_side_view.png`](./07_cad_design/cad_side_view.png)
+- **Physical 3D-Printed Prototype:** [`enclosure_physical_prototype.jpeg`](./07_cad_design/physical_prototype/enclosure_physical_prototype.jpeg)
 
 ---
 

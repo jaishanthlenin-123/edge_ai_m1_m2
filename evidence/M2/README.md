@@ -69,7 +69,18 @@ evidence/M2/
 │   ├── detection_20261106_152303.jpg      # Lateral tracking detection frame (93.3% conf)
 │   ├── detection_20261106_152325.jpg      # Multi-instance dual enclosure detection (91.7% / 71.2%)
 │   ├── detection_20261106_152328.jpg      # Multi-instance tracking persistence (91.7% / 65.2%)
-│   └── detection_20261106_152336.jpg      # Angled perspective detection frame (75.0% conf)
+│   ├── detection_20261106_152336.jpg      # Angled perspective detection frame (75.0% conf)
+│   ├── scanning_tests/                    # Camera scanning photos & normal-room/blackboard MP4 videos
+│   │   ├── scanning-1.jpeg                # Room scanning field test photo
+│   │   ├── scanning-2.jpeg                # Ambient room test photo (100% background rejection)
+│   │   ├── video_scanning_normal_room.mp4 # Video: Normal room scanning & detection (14.7s)
+│   │   └── video_scanning_blackboard.mp4  # Video: Blackboard scanning & detection (25.2s)
+│   └── video_frames/                      # Extracted video telemetry frames (detection & scanning)
+│       ├── normal_room_detection_active.jpg
+│       ├── normal_room_scanning_rejection.jpg
+│       ├── blackboard_detection_active.jpg
+│       ├── blackboard_tracking_frame.jpg
+│       └── blackboard_scanning_rejection.jpg
 ├── 03_accuracy_verification/              # Criterion 3: Accuracy Check (4 Marks)
 │   ├── README.md                          # Accuracy parity report & numerical tolerance checks
 │   ├── m2_accuracy_parity_profile.png     # Bar chart comparing PyTorch vs ONNX metrics

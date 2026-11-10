@@ -133,6 +133,7 @@ edge_ai_m1_m2/
     │       ├── cad_front_view.png         # Autodesk Fusion 360 front elevation (lens aperture & standoffs)
     │       ├── cad_perspective_view.png   # Autodesk Fusion 360 perspective view (internal cavity & port)
     │       ├── cad_side_view.png          # Autodesk Fusion 360 side elevation (ribbon cable egress notch)
+    │       ├── physical_prototype/        # Fabricated physical 3D-printed enclosure prototype photo
     │       ├── M1_CAD_Design_Report.md    # Comprehensive CAD engineering report
     │       ├── CAD_Design_Specification.md# Engineering specifications & tolerances
     │       ├── CAD_File_Information.md    # File forensics, checksums & viewer guide
@@ -142,6 +143,10 @@ edge_ai_m1_m2/
         ├── M2_ASSESSMENT_LINKS.md         # Direct Sheet Submission Links (Cells D, F, H, J, L, N)
         ├── 01_onnx_export/                # Criterion 1: Export to ONNX (3 Marks)
         ├── 02_live_onnx_deployment/       # Criterion 2: Convert & Run Live (4 Marks)
+        │   ├── README.md                  # Live deployment walkthrough & pipeline architecture
+        │   ├── detection_*.jpg            # 8 genuine verified enclosure detection frames
+        │   ├── scanning_tests/            # Camera scanning photos & normal-room/blackboard MP4 videos
+        │   └── video_frames/              # Extracted video telemetry frames (detection & scanning)
         ├── 03_accuracy_verification/      # Criterion 3: Accuracy Check (4 Marks)
         ├── 04_fair_benchmark/             # Criterion 4: Fair Benchmark (4 Marks)
         ├── 05_cpu_accelerator_comparison/ # Criterion 5: CPU vs Accelerator Stack (2 Marks)
@@ -170,7 +175,16 @@ The custom Raspberry Pi Camera Enclosure was modeled by **Jaishanth** as an **In
 | ![CAD Perspective View](evidence/M1/07_cad_design/cad_perspective_view.png) | ![CAD Side Profile](evidence/M1/07_cad_design/cad_side_view.png) |
 | *Figure 5.3: Autodesk Fusion 360 perspective view showing camera PCB chamber, interior beveling, and ribbon cable routing channel.* | *Figure 5.4: Autodesk Fusion 360 lateral elevation showing chassis profile thickness and strain-relieved FFC ribbon cable egress slot.* |
 
-### 5.2 CAD Model Verification & Integrity
+### 5.2 Physical 3D-Printed Prototype Hardware Evidence
+
+The physical prototype of the Raspberry Pi Camera Enclosure was manufactured using FDM 3D printing conforming to the Autodesk Fusion 360 CAD dimensions:
+
+| Fabricated Physical Enclosure Prototype (IDRP Hardware Component) |
+| :---: |
+| ![Physical Enclosure Prototype](evidence/M1/07_cad_design/physical_prototype/enclosure_physical_prototype.jpeg) |
+| *Figure 5.5: Genuine photograph of the fabricated 3D-printed Raspberry Pi camera enclosure prototype. Demonstrates physical realization of the top faceplate, Ø 16 mm circular lens opening, and structural housing conforming to `ENCLOSURE_JAISHANTH.f3d`.* |
+
+### 5.3 CAD Model Verification & Integrity
 - **Original CAD File:** [`evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d`](evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d)
 - **Direct GitHub File Link:** [`ENCLOSURE_JAISHANTH.f3d`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/blob/main/evidence/M1/07_cad_design/ENCLOSURE_JAISHANTH.f3d)
 - **CAD Evidence Folder:** [`evidence/M1/07_cad_design/`](https://github.com/jaishanthlenin-123/edge_ai_m1_m2/tree/main/evidence/M1/07_cad_design/)

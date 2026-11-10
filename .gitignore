@@ -37,6 +37,7 @@ dist/
 *.swo
 .DS_Store
 Thumbs.db
+photos and videos/
 
 # Explicitly track trained models in models/
 !models/best.pt

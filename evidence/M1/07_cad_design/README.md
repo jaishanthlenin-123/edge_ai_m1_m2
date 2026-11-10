@@ -27,6 +27,17 @@ This directory contains the computer-aided design (CAD) models, engineering draw
 
 ---
 
+### 1.2 Physical 3D-Printed Prototype Hardware Evidence
+
+The physical prototype of the Raspberry Pi Camera Enclosure was fabricated using FDM 3D printing according to the exact dimensional parameters established in Autodesk Fusion 360:
+
+| Fabricated Physical Enclosure Prototype (IDRP Hardware Component) |
+| :---: |
+| ![Physical Enclosure Prototype](./physical_prototype/enclosure_physical_prototype.jpeg) |
+| *Figure 1.5: Genuine photograph of the physical 3D-printed Raspberry Pi camera enclosure (IDRP hardware component). Demonstrates the physical top shell, Ø 16 mm circular lens opening, and structural housing matching the Fusion 360 geometry in `ENCLOSURE_JAISHANTH.f3d`.* |
+
+---
+
 ## 2. CAD File Verification & Integrity
 
 - **Filename:** `ENCLOSURE_JAISHANTH.f3d`
@@ -47,6 +58,7 @@ This directory contains the computer-aided design (CAD) models, engineering draw
 | **Front Elevation View** | [`cad_front_view.png`](./cad_front_view.png) | Autodesk Fusion 360 front elevation showing Ø 16 mm aperture & standoffs |
 | **Perspective / Chamber View** | [`cad_perspective_view.png`](./cad_perspective_view.png) | Autodesk Fusion 360 perspective showing camera PCB chamber and bevel |
 | **Side Elevation View** | [`cad_side_view.png`](./cad_side_view.png) | Autodesk Fusion 360 lateral elevation showing ribbon cable exit notch |
+| **Physical 3D-Printed Prototype** | [`physical_prototype/enclosure_physical_prototype.jpeg`](./physical_prototype/enclosure_physical_prototype.jpeg) | Genuine photograph of fabricated physical 3D-printed enclosure prototype |
 
 ---
 

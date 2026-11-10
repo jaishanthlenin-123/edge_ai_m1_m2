@@ -19,12 +19,12 @@ Once captured, place the image files in `evidence/M1/07_cad_design/photos/` and 
 
 | # | Photo Description | Angle / Framing | Purpose | Status | Target Filename |
 | :---: | :--- | :--- | :--- | :---: | :--- |
-| **1** | **Assembled Isometric View** | $45^\circ$ angled view on clean desk or neutral background | Verifies overall physical 3D print quality and appearance | `[ ] Pending` | `photo_01_assembled_isometric.jpg` |
-| **2** | **Front View with Lens** | Direct face-on view showing circular aperture and camera lens | Confirms optical centering and aperture clearance | `[ ] Pending` | `photo_02_front_lens_view.jpg` |
-| **3** | **Side View with Ribbon Cable**| Lateral view showing ribbon cable egress slot | Verifies cable strain relief and joint fit | `[ ] Pending` | `photo_03_side_ribbon_egress.jpg` |
-| **4** | **Internal Assembly (Opened Lid)**| Top-down view into base cavity with camera module seated | Documents internal mounting standoffs and PCB fitment | `[ ] Pending` | `photo_04_internal_mounting.jpg` |
-| **5** | **Dimensional Verification (Caliper)**| Digital caliper measuring outer width (~64 mm) | Validates dimensional accuracy against CAD model | `[ ] Pending` | `photo_05_caliper_measurement.jpg` |
-| **6** | **Layer Line / Surface Detail**| Close-up macro showing FDM layer lines and finish | Documents manufacturing parameters (PLA/PETG) | `[ ] Pending` | `photo_06_print_layer_detail.jpg` |
+| **1** | **Physical Prototype Enclosure** | Full hardware photograph showing 3D-printed enclosure shell & aperture | Verifies physical fabrication and prototype realization | `[x] Captured & Verified` | [`physical_prototype/enclosure_physical_prototype.jpeg`](./physical_prototype/enclosure_physical_prototype.jpeg) |
+| **2** | **Front View with Lens** | Direct face-on view showing circular aperture and camera lens | Confirms optical centering and aperture clearance | `[x] Integrated in Prototype Photo` | `physical_prototype/enclosure_physical_prototype.jpeg` |
+| **3** | **Side View with Ribbon Cable**| Lateral view showing ribbon cable egress slot | Verifies cable strain relief and joint fit | `[ ] Supplementary` | `photos/photo_03_side_ribbon_egress.jpg` |
+| **4** | **Internal Assembly (Opened Lid)**| Top-down view into base cavity with camera module seated | Documents internal mounting standoffs and PCB fitment | `[ ] Supplementary` | `photos/photo_04_internal_mounting.jpg` |
+| **5** | **Dimensional Verification (Caliper)**| Digital caliper measuring outer width (~64 mm) | Validates dimensional accuracy against CAD model | `[ ] Supplementary` | `photos/photo_05_caliper_measurement.jpg` |
+| **6** | **Layer Line / Surface Detail**| Close-up macro showing FDM layer lines and finish | Documents manufacturing parameters (PLA/PETG) | `[ ] Supplementary` | `photos/photo_06_print_layer_detail.jpg` |
 
 ---
 

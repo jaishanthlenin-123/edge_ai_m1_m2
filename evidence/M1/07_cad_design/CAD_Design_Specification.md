@@ -41,6 +41,13 @@ View 4: Side Profile   Z-Y Projection          FFC ribbon exit slot, joint seam 
 ========================================================================================
 ```
 
+### 2.1 Physical 3D-Printed Prototype Hardware Evidence
+
+| Fabricated Physical Enclosure Prototype (IDRP Hardware Component) |
+| :---: |
+| ![Physical Enclosure Prototype](./physical_prototype/enclosure_physical_prototype.jpeg) |
+| *Figure 2.5: Physical prototype of the Raspberry Pi Camera Enclosure fabricated via FDM 3D printing conforming to the specified dimensions below.* |
+
 ---
 
 ## 3. Dimensional Specifications (Extracted from Original CAD)

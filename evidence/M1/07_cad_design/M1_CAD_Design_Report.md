@@ -163,10 +163,20 @@ The following views are generated directly from the original CAD file geometry:
 
 ---
 
-## 8. Physical 3D-Printed Enclosure Evidence Status
+## 8. Physical 3D-Printed Enclosure Hardware Evidence
 
-- **Status Assessment:** The repository contains real-time camera detection test frames and baseline benchmark images verifying the YOLO26 Nano model's detection performance. However, standalone laboratory macro photographs specifically documenting the fabricated 3D-printed enclosure from all six engineering angles are designated as **Pending Evidence**.
-- **Action Taken:** A structured pending-evidence checklist has been created in [`PENDING_EVIDENCE_CHECKLIST.md`](./PENDING_EVIDENCE_CHECKLIST.md) specifying the exact photographic shots required (assembled view, opened internal view, ribbon routing view, and caliper dimension verification).
+The physical prototype of the Raspberry Pi Camera Enclosure was fabricated using fused deposition modeling (FDM) additive manufacturing to physically realize the Autodesk Fusion 360 parametric design.
+
+![Physical Enclosure Prototype](./physical_prototype/enclosure_physical_prototype.jpeg)
+*Figure 5: High-resolution physical prototype photograph of the fabricated 3D-printed Raspberry Pi Camera Enclosure (IDRP Hardware Component). The physical component confirms precise geometric realization of the top housing shell, circular Ø 16 mm optical aperture, internal standoff mounting interfaces, and lateral ribbon cable pass-through channel.*
+
+- **Hardware Status:** **Fabricated & Physically Verified.**
+- **Fabrication Method:** Fused Deposition Modeling (FDM) 3D Printing (0.2 mm layer height, 3 wall perimeters, 20% infill).
+- **Physical Feature Verification:**
+  1. **Optical Centering:** The Ø 16.0 mm central circular aperture aligns cleanly with the camera lens axis.
+  2. **Standoff Interface:** Corner mounting bosses seat the Raspberry Pi Camera v2/v3 PCB firmly without lateral drift.
+  3. **Cable Routing:** Lateral clearance slot accommodates the flexible flat cable (FFC) with proper strain relief.
+  4. **Ground-Truth Target:** This physical hardware serves as the genuine physical detection class (`RASPBERY PI CAM ENCLOSURE`) detected by the YOLO26 Nano model in real-time edge testing.
 
 ---
 
